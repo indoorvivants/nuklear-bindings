@@ -1,0 +1,44 @@
+name: CI
+on:
+  push:
+    branches: ["main"]
+    tags: ["v*"]
+  pull_request:
+    branches: ["*"]
+
+jobs:
+  build:
+    name: CI
+    strategy:
+      fail-fast: false
+      matrix: 
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: coursier/cache-action@v6      
+
+      - name: Setup
+        run: |
+          PLATFORM="$(uname)"
+
+          if [ $PLATFORM == "Darwin" ]; then
+            echo "It's a Mac"
+            brew install llvm@14
+          else
+            echo "It's a Linux"
+            wget https://apt.llvm.org/llvm.sh
+            chmod +x llvm.sh
+            sudo ./llvm.sh 14
+          fi
+
+      - name: Compile examples
+        run: sbt run
+
+  mergify-build-checkpoint:
+    runs-on: ubuntu-latest
+    needs: [build]
+    steps:
+      - name: I only exist to please Mergify :(
+        run: echo "It's a sad existence but necessary"
