@@ -5,9 +5,6 @@ import _root_.scala.scalanative.unsigned.*
 import _root_.scala.scalanative.libc.*
 import _root_.scala.scalanative.*
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_handle = CArray[Byte, Nat._8]
 object nk_handle:
   given _tag: Tag[nk_handle] = Tag.CArray[CChar, Nat._8](Tag.Byte, Tag.Nat8)
@@ -32,9 +29,6 @@ object nk_handle:
     def id : CInt = !struct.at(0).asInstanceOf[Ptr[CInt]]
     def id_=(value: CInt): Unit = !struct.at(0).asInstanceOf[Ptr[CInt]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_page_data = CArray[Byte, Nat.Digit3[Nat._5, Nat._0, Nat._4]]
 object nk_page_data:
   given _tag: Tag[nk_page_data] = Tag.CArray[CChar, Nat.Digit3[Nat._5, Nat._0, Nat._4]](Tag.Byte, Tag.Digit3[Nat._5, Nat._0, Nat._4](Tag.Nat5, Tag.Nat0, Tag.Nat4))
@@ -67,9 +61,6 @@ object nk_page_data:
     def win : nk_window = !struct.at(0).asInstanceOf[Ptr[nk_window]]
     def win_=(value: nk_window): Unit = !struct.at(0).asInstanceOf[Ptr[nk_window]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_property = CArray[Byte, Nat._8]
 object nk_property:
   given _tag: Tag[nk_property] = Tag.CArray[CChar, Nat._8](Tag.Byte, Tag.Nat8)
@@ -102,9 +93,6 @@ object nk_property:
     def d : Double = !struct.at(0).asInstanceOf[Ptr[Double]]
     def d_=(value: Double): Unit = !struct.at(0).asInstanceOf[Ptr[Double]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_style_item_data = CArray[Byte, Nat.Digit2[Nat._2, Nat._8]]
 object nk_style_item_data:
   given _tag: Tag[nk_style_item_data] = Tag.CArray[CChar, Nat.Digit2[Nat._2, Nat._8]](Tag.Byte, Tag.Digit2[Nat._2, Nat._8](Tag.Nat2, Tag.Nat8))

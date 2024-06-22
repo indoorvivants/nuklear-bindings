@@ -5,9 +5,6 @@ import _root_.scala.scalanative.unsigned.*
 import _root_.scala.scalanative.libc.*
 import _root_.scala.scalanative.*
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_allocator = CArray[CChar, Nat.Digit2[Nat._2, Nat._4]]
 object nk_allocator:
   given _tag: Tag[nk_allocator] = Tag.CArray[CChar, Nat.Digit2[Nat._2, Nat._4]](Tag.Byte, Tag.Digit2[Nat._2, Nat._4](Tag.Nat2, Tag.Nat4))
@@ -26,9 +23,6 @@ object nk_allocator:
     def free: nk_plugin_free = !struct.at(16).asInstanceOf[Ptr[nk_plugin_free]]
     def free_=(value: nk_plugin_free): Unit = !struct.at(16).asInstanceOf[Ptr[nk_plugin_free]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_buffer = CArray[CChar, Nat.Digit3[Nat._1, Nat._2, Nat._0]]
 object nk_buffer:
   given _tag: Tag[nk_buffer] = Tag.CArray[CChar, Nat.Digit3[Nat._1, Nat._2, Nat._0]](Tag.Byte, Tag.Digit3[Nat._1, Nat._2, Nat._0](Tag.Nat1, Tag.Nat2, Tag.Nat0))
@@ -65,9 +59,6 @@ object nk_buffer:
     def size: nk_size = !struct.at(112).asInstanceOf[Ptr[nk_size]]
     def size_=(value: nk_size): Unit = !struct.at(112).asInstanceOf[Ptr[nk_size]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_buffer_marker = CArray[CChar, Nat.Digit2[Nat._1, Nat._6]]
 object nk_buffer_marker:
   given _tag: Tag[nk_buffer_marker] = Tag.CArray[CChar, Nat.Digit2[Nat._1, Nat._6]](Tag.Byte, Tag.Digit2[Nat._1, Nat._6](Tag.Nat1, Tag.Nat6))
@@ -83,9 +74,6 @@ object nk_buffer_marker:
     def offset: nk_size = !struct.at(8).asInstanceOf[Ptr[nk_size]]
     def offset_=(value: nk_size): Unit = !struct.at(8).asInstanceOf[Ptr[nk_size]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_chart = CArray[CChar, Nat.Digit3[Nat._1, Nat._9, Nat._6]]
 object nk_chart:
   given _tag: Tag[nk_chart] = Tag.CArray[CChar, Nat.Digit3[Nat._1, Nat._9, Nat._6]](Tag.Byte, Tag.Digit3[Nat._1, Nat._9, Nat._6](Tag.Nat1, Tag.Nat9, Tag.Nat6))
@@ -113,9 +101,6 @@ object nk_chart:
     def slots: CArray[nk_chart_slot, Nat._4] = !struct.at(20).asInstanceOf[Ptr[CArray[nk_chart_slot, Nat._4]]]
     def slots_=(value: CArray[nk_chart_slot, Nat._4]): Unit = !struct.at(20).asInstanceOf[Ptr[CArray[nk_chart_slot, Nat._4]]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_chart_slot = CArray[CChar, Nat.Digit2[Nat._4, Nat._4]]
 object nk_chart_slot:
   given _tag: Tag[nk_chart_slot] = Tag.CArray[CChar, Nat.Digit2[Nat._4, Nat._4]](Tag.Byte, Tag.Digit2[Nat._4, Nat._4](Tag.Nat4, Tag.Nat4))
@@ -155,9 +140,6 @@ object nk_chart_slot:
     def show_markers: nk_bool = !struct.at(40).asInstanceOf[Ptr[nk_bool]]
     def show_markers_=(value: nk_bool): Unit = !struct.at(40).asInstanceOf[Ptr[nk_bool]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_clipboard = CArray[CChar, Nat.Digit2[Nat._2, Nat._4]]
 object nk_clipboard:
   given _tag: Tag[nk_clipboard] = Tag.CArray[CChar, Nat.Digit2[Nat._2, Nat._4]](Tag.Byte, Tag.Digit2[Nat._2, Nat._4](Tag.Nat2, Tag.Nat4))
@@ -176,9 +158,6 @@ object nk_clipboard:
     def copy: nk_plugin_copy = !struct.at(16).asInstanceOf[Ptr[nk_plugin_copy]]
     def copy_=(value: nk_plugin_copy): Unit = !struct.at(16).asInstanceOf[Ptr[nk_plugin_copy]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_color = CArray[CChar, Nat._4]
 object nk_color:
   given _tag: Tag[nk_color] = Tag.CArray[CChar, Nat._4](Tag.Byte, Tag.Nat4)
@@ -200,9 +179,6 @@ object nk_color:
     def a: nk_byte = !struct.at(3).asInstanceOf[Ptr[nk_byte]]
     def a_=(value: nk_byte): Unit = !struct.at(3).asInstanceOf[Ptr[nk_byte]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_colorf = CArray[CChar, Nat.Digit2[Nat._1, Nat._6]]
 object nk_colorf:
   given _tag: Tag[nk_colorf] = Tag.CArray[CChar, Nat.Digit2[Nat._1, Nat._6]](Tag.Byte, Tag.Digit2[Nat._1, Nat._6](Tag.Nat1, Tag.Nat6))
@@ -224,9 +200,6 @@ object nk_colorf:
     def a: Float = !struct.at(12).asInstanceOf[Ptr[Float]]
     def a_=(value: Float): Unit = !struct.at(12).asInstanceOf[Ptr[Float]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_command = CArray[CChar, Nat.Digit2[Nat._1, Nat._6]]
 object nk_command:
   given _tag: Tag[nk_command] = Tag.CArray[CChar, Nat.Digit2[Nat._1, Nat._6]](Tag.Byte, Tag.Digit2[Nat._1, Nat._6](Tag.Nat1, Tag.Nat6))
@@ -242,9 +215,6 @@ object nk_command:
     def next: nk_size = !struct.at(8).asInstanceOf[Ptr[nk_size]]
     def next_=(value: nk_size): Unit = !struct.at(8).asInstanceOf[Ptr[nk_size]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_command_arc = CArray[CChar, Nat.Digit2[Nat._4, Nat._0]]
 object nk_command_arc:
   given _tag: Tag[nk_command_arc] = Tag.CArray[CChar, Nat.Digit2[Nat._4, Nat._0]](Tag.Byte, Tag.Digit2[Nat._4, Nat._0](Tag.Nat4, Tag.Nat0))
@@ -275,9 +245,6 @@ object nk_command_arc:
     def color: nk_color = !struct.at(32).asInstanceOf[Ptr[nk_color]]
     def color_=(value: nk_color): Unit = !struct.at(32).asInstanceOf[Ptr[nk_color]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_command_arc_filled = CArray[CChar, Nat.Digit2[Nat._4, Nat._0]]
 object nk_command_arc_filled:
   given _tag: Tag[nk_command_arc_filled] = Tag.CArray[CChar, Nat.Digit2[Nat._4, Nat._0]](Tag.Byte, Tag.Digit2[Nat._4, Nat._0](Tag.Nat4, Tag.Nat0))
@@ -305,9 +272,6 @@ object nk_command_arc_filled:
     def color: nk_color = !struct.at(32).asInstanceOf[Ptr[nk_color]]
     def color_=(value: nk_color): Unit = !struct.at(32).asInstanceOf[Ptr[nk_color]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_command_buffer = CArray[CChar, Nat.Digit2[Nat._6, Nat._4]]
 object nk_command_buffer:
   given _tag: Tag[nk_command_buffer] = Tag.CArray[CChar, Nat.Digit2[Nat._6, Nat._4]](Tag.Byte, Tag.Digit2[Nat._6, Nat._4](Tag.Nat6, Tag.Nat4))
@@ -338,9 +302,6 @@ object nk_command_buffer:
     def last: nk_size = !struct.at(56).asInstanceOf[Ptr[nk_size]]
     def last_=(value: nk_size): Unit = !struct.at(56).asInstanceOf[Ptr[nk_size]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_command_circle = CArray[CChar, Nat.Digit2[Nat._3, Nat._2]]
 object nk_command_circle:
   given _tag: Tag[nk_command_circle] = Tag.CArray[CChar, Nat.Digit2[Nat._3, Nat._2]](Tag.Byte, Tag.Digit2[Nat._3, Nat._2](Tag.Nat3, Tag.Nat2))
@@ -371,9 +332,6 @@ object nk_command_circle:
     def color: nk_color = !struct.at(26).asInstanceOf[Ptr[nk_color]]
     def color_=(value: nk_color): Unit = !struct.at(26).asInstanceOf[Ptr[nk_color]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_command_circle_filled = CArray[CChar, Nat.Digit2[Nat._3, Nat._2]]
 object nk_command_circle_filled:
   given _tag: Tag[nk_command_circle_filled] = Tag.CArray[CChar, Nat.Digit2[Nat._3, Nat._2]](Tag.Byte, Tag.Digit2[Nat._3, Nat._2](Tag.Nat3, Tag.Nat2))
@@ -401,9 +359,6 @@ object nk_command_circle_filled:
     def color: nk_color = !struct.at(24).asInstanceOf[Ptr[nk_color]]
     def color_=(value: nk_color): Unit = !struct.at(24).asInstanceOf[Ptr[nk_color]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_command_curve = CArray[CChar, Nat.Digit2[Nat._4, Nat._0]]
 object nk_command_curve:
   given _tag: Tag[nk_command_curve] = Tag.CArray[CChar, Nat.Digit2[Nat._4, Nat._0]](Tag.Byte, Tag.Digit2[Nat._4, Nat._0](Tag.Nat4, Tag.Nat0))
@@ -431,9 +386,6 @@ object nk_command_curve:
     def color: nk_color = !struct.at(34).asInstanceOf[Ptr[nk_color]]
     def color_=(value: nk_color): Unit = !struct.at(34).asInstanceOf[Ptr[nk_color]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_command_custom = CArray[CChar, Nat.Digit2[Nat._4, Nat._0]]
 object nk_command_custom:
   given _tag: Tag[nk_command_custom] = Tag.CArray[CChar, Nat.Digit2[Nat._4, Nat._0]](Tag.Byte, Tag.Digit2[Nat._4, Nat._0](Tag.Nat4, Tag.Nat0))
@@ -464,9 +416,6 @@ object nk_command_custom:
     def callback: nk_command_custom_callback = !struct.at(32).asInstanceOf[Ptr[nk_command_custom_callback]]
     def callback_=(value: nk_command_custom_callback): Unit = !struct.at(32).asInstanceOf[Ptr[nk_command_custom_callback]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_command_image = CArray[CChar, Nat.Digit2[Nat._4, Nat._8]]
 object nk_command_image:
   given _tag: Tag[nk_command_image] = Tag.CArray[CChar, Nat.Digit2[Nat._4, Nat._8]](Tag.Byte, Tag.Digit2[Nat._4, Nat._8](Tag.Nat4, Tag.Nat8))
@@ -497,9 +446,6 @@ object nk_command_image:
     def col: nk_color = !struct.at(44).asInstanceOf[Ptr[nk_color]]
     def col_=(value: nk_color): Unit = !struct.at(44).asInstanceOf[Ptr[nk_color]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_command_line = CArray[CChar, Nat.Digit2[Nat._3, Nat._2]]
 object nk_command_line:
   given _tag: Tag[nk_command_line] = Tag.CArray[CChar, Nat.Digit2[Nat._3, Nat._2]](Tag.Byte, Tag.Digit2[Nat._3, Nat._2](Tag.Nat3, Tag.Nat2))
@@ -524,9 +470,6 @@ object nk_command_line:
     def color: nk_color = !struct.at(26).asInstanceOf[Ptr[nk_color]]
     def color_=(value: nk_color): Unit = !struct.at(26).asInstanceOf[Ptr[nk_color]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_command_polygon = CArray[CChar, Nat.Digit2[Nat._3, Nat._2]]
 object nk_command_polygon:
   given _tag: Tag[nk_command_polygon] = Tag.CArray[CChar, Nat.Digit2[Nat._3, Nat._2]](Tag.Byte, Tag.Digit2[Nat._3, Nat._2](Tag.Nat3, Tag.Nat2))
@@ -551,9 +494,6 @@ object nk_command_polygon:
     def points: CArray[nk_vec2i, Nat._1] = !struct.at(24).asInstanceOf[Ptr[CArray[nk_vec2i, Nat._1]]]
     def points_=(value: CArray[nk_vec2i, Nat._1]): Unit = !struct.at(24).asInstanceOf[Ptr[CArray[nk_vec2i, Nat._1]]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_command_polygon_filled = CArray[CChar, Nat.Digit2[Nat._3, Nat._2]]
 object nk_command_polygon_filled:
   given _tag: Tag[nk_command_polygon_filled] = Tag.CArray[CChar, Nat.Digit2[Nat._3, Nat._2]](Tag.Byte, Tag.Digit2[Nat._3, Nat._2](Tag.Nat3, Tag.Nat2))
@@ -575,9 +515,6 @@ object nk_command_polygon_filled:
     def points: CArray[nk_vec2i, Nat._1] = !struct.at(22).asInstanceOf[Ptr[CArray[nk_vec2i, Nat._1]]]
     def points_=(value: CArray[nk_vec2i, Nat._1]): Unit = !struct.at(22).asInstanceOf[Ptr[CArray[nk_vec2i, Nat._1]]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_command_polyline = CArray[CChar, Nat.Digit2[Nat._3, Nat._2]]
 object nk_command_polyline:
   given _tag: Tag[nk_command_polyline] = Tag.CArray[CChar, Nat.Digit2[Nat._3, Nat._2]](Tag.Byte, Tag.Digit2[Nat._3, Nat._2](Tag.Nat3, Tag.Nat2))
@@ -602,9 +539,6 @@ object nk_command_polyline:
     def points: CArray[nk_vec2i, Nat._1] = !struct.at(24).asInstanceOf[Ptr[CArray[nk_vec2i, Nat._1]]]
     def points_=(value: CArray[nk_vec2i, Nat._1]): Unit = !struct.at(24).asInstanceOf[Ptr[CArray[nk_vec2i, Nat._1]]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_command_rect = CArray[CChar, Nat.Digit2[Nat._3, Nat._2]]
 object nk_command_rect:
   given _tag: Tag[nk_command_rect] = Tag.CArray[CChar, Nat.Digit2[Nat._3, Nat._2]](Tag.Byte, Tag.Digit2[Nat._3, Nat._2](Tag.Nat3, Tag.Nat2))
@@ -638,9 +572,6 @@ object nk_command_rect:
     def color: nk_color = !struct.at(28).asInstanceOf[Ptr[nk_color]]
     def color_=(value: nk_color): Unit = !struct.at(28).asInstanceOf[Ptr[nk_color]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_command_rect_filled = CArray[CChar, Nat.Digit2[Nat._3, Nat._2]]
 object nk_command_rect_filled:
   given _tag: Tag[nk_command_rect_filled] = Tag.CArray[CChar, Nat.Digit2[Nat._3, Nat._2]](Tag.Byte, Tag.Digit2[Nat._3, Nat._2](Tag.Nat3, Tag.Nat2))
@@ -671,9 +602,6 @@ object nk_command_rect_filled:
     def color: nk_color = !struct.at(26).asInstanceOf[Ptr[nk_color]]
     def color_=(value: nk_color): Unit = !struct.at(26).asInstanceOf[Ptr[nk_color]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_command_rect_multi_color = CArray[CChar, Nat.Digit2[Nat._4, Nat._0]]
 object nk_command_rect_multi_color:
   given _tag: Tag[nk_command_rect_multi_color] = Tag.CArray[CChar, Nat.Digit2[Nat._4, Nat._0]](Tag.Byte, Tag.Digit2[Nat._4, Nat._0](Tag.Nat4, Tag.Nat0))
@@ -710,9 +638,6 @@ object nk_command_rect_multi_color:
     def right: nk_color = !struct.at(36).asInstanceOf[Ptr[nk_color]]
     def right_=(value: nk_color): Unit = !struct.at(36).asInstanceOf[Ptr[nk_color]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_command_scissor = CArray[CChar, Nat.Digit2[Nat._2, Nat._4]]
 object nk_command_scissor:
   given _tag: Tag[nk_command_scissor] = Tag.CArray[CChar, Nat.Digit2[Nat._2, Nat._4]](Tag.Byte, Tag.Digit2[Nat._2, Nat._4](Tag.Nat2, Tag.Nat4))
@@ -737,9 +662,6 @@ object nk_command_scissor:
     def h: CUnsignedShort = !struct.at(22).asInstanceOf[Ptr[CUnsignedShort]]
     def h_=(value: CUnsignedShort): Unit = !struct.at(22).asInstanceOf[Ptr[CUnsignedShort]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_command_text = CArray[CChar, Nat.Digit2[Nat._5, Nat._6]]
 object nk_command_text:
   given _tag: Tag[nk_command_text] = Tag.CArray[CChar, Nat.Digit2[Nat._5, Nat._6]](Tag.Byte, Tag.Digit2[Nat._5, Nat._6](Tag.Nat5, Tag.Nat6))
@@ -782,9 +704,6 @@ object nk_command_text:
     def string: CArray[CChar, Nat._1] = !struct.at(48).asInstanceOf[Ptr[CArray[CChar, Nat._1]]]
     def string_=(value: CArray[CChar, Nat._1]): Unit = !struct.at(48).asInstanceOf[Ptr[CArray[CChar, Nat._1]]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_command_triangle = CArray[CChar, Nat.Digit2[Nat._4, Nat._0]]
 object nk_command_triangle:
   given _tag: Tag[nk_command_triangle] = Tag.CArray[CChar, Nat.Digit2[Nat._4, Nat._0]](Tag.Byte, Tag.Digit2[Nat._4, Nat._0](Tag.Nat4, Tag.Nat0))
@@ -812,9 +731,6 @@ object nk_command_triangle:
     def color: nk_color = !struct.at(30).asInstanceOf[Ptr[nk_color]]
     def color_=(value: nk_color): Unit = !struct.at(30).asInstanceOf[Ptr[nk_color]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_command_triangle_filled = CArray[CChar, Nat.Digit2[Nat._3, Nat._2]]
 object nk_command_triangle_filled:
   given _tag: Tag[nk_command_triangle_filled] = Tag.CArray[CChar, Nat.Digit2[Nat._3, Nat._2]](Tag.Byte, Tag.Digit2[Nat._3, Nat._2](Tag.Nat3, Tag.Nat2))
@@ -839,9 +755,6 @@ object nk_command_triangle_filled:
     def color: nk_color = !struct.at(28).asInstanceOf[Ptr[nk_color]]
     def color_=(value: nk_color): Unit = !struct.at(28).asInstanceOf[Ptr[nk_color]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_config_stack_button_behavior = CArray[CChar, Nat.Digit3[Nat._1, Nat._3, Nat._6]]
 object nk_config_stack_button_behavior:
   given _tag: Tag[nk_config_stack_button_behavior] = Tag.CArray[CChar, Nat.Digit3[Nat._1, Nat._3, Nat._6]](Tag.Byte, Tag.Digit3[Nat._1, Nat._3, Nat._6](Tag.Nat1, Tag.Nat3, Tag.Nat6))
@@ -857,9 +770,6 @@ object nk_config_stack_button_behavior:
     def elements: CArray[nk_config_stack_button_behavior_element, Nat._8] = !struct.at(8).asInstanceOf[Ptr[CArray[nk_config_stack_button_behavior_element, Nat._8]]]
     def elements_=(value: CArray[nk_config_stack_button_behavior_element, Nat._8]): Unit = !struct.at(8).asInstanceOf[Ptr[CArray[nk_config_stack_button_behavior_element, Nat._8]]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_config_stack_button_behavior_element = CArray[CChar, Nat.Digit2[Nat._1, Nat._6]]
 object nk_config_stack_button_behavior_element:
   given _tag: Tag[nk_config_stack_button_behavior_element] = Tag.CArray[CChar, Nat.Digit2[Nat._1, Nat._6]](Tag.Byte, Tag.Digit2[Nat._1, Nat._6](Tag.Nat1, Tag.Nat6))
@@ -875,9 +785,6 @@ object nk_config_stack_button_behavior_element:
     def old_value: nk_button_behavior = !struct.at(8).asInstanceOf[Ptr[nk_button_behavior]]
     def old_value_=(value: nk_button_behavior): Unit = !struct.at(8).asInstanceOf[Ptr[nk_button_behavior]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_config_stack_color = CArray[CChar, Nat.Digit3[Nat._5, Nat._2, Nat._0]]
 object nk_config_stack_color:
   given _tag: Tag[nk_config_stack_color] = Tag.CArray[CChar, Nat.Digit3[Nat._5, Nat._2, Nat._0]](Tag.Byte, Tag.Digit3[Nat._5, Nat._2, Nat._0](Tag.Nat5, Tag.Nat2, Tag.Nat0))
@@ -893,9 +800,6 @@ object nk_config_stack_color:
     def elements: CArray[nk_config_stack_color_element, Nat.Digit2[Nat._3, Nat._2]] = !struct.at(8).asInstanceOf[Ptr[CArray[nk_config_stack_color_element, Nat.Digit2[Nat._3, Nat._2]]]]
     def elements_=(value: CArray[nk_config_stack_color_element, Nat.Digit2[Nat._3, Nat._2]]): Unit = !struct.at(8).asInstanceOf[Ptr[CArray[nk_config_stack_color_element, Nat.Digit2[Nat._3, Nat._2]]]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_config_stack_color_element = CArray[CChar, Nat.Digit2[Nat._1, Nat._6]]
 object nk_config_stack_color_element:
   given _tag: Tag[nk_config_stack_color_element] = Tag.CArray[CChar, Nat.Digit2[Nat._1, Nat._6]](Tag.Byte, Tag.Digit2[Nat._1, Nat._6](Tag.Nat1, Tag.Nat6))
@@ -911,9 +815,6 @@ object nk_config_stack_color_element:
     def old_value: nk_color = !struct.at(8).asInstanceOf[Ptr[nk_color]]
     def old_value_=(value: nk_color): Unit = !struct.at(8).asInstanceOf[Ptr[nk_color]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_config_stack_flags = CArray[CChar, Nat.Digit3[Nat._5, Nat._2, Nat._0]]
 object nk_config_stack_flags:
   given _tag: Tag[nk_config_stack_flags] = Tag.CArray[CChar, Nat.Digit3[Nat._5, Nat._2, Nat._0]](Tag.Byte, Tag.Digit3[Nat._5, Nat._2, Nat._0](Tag.Nat5, Tag.Nat2, Tag.Nat0))
@@ -929,9 +830,6 @@ object nk_config_stack_flags:
     def elements: CArray[nk_config_stack_flags_element, Nat.Digit2[Nat._3, Nat._2]] = !struct.at(8).asInstanceOf[Ptr[CArray[nk_config_stack_flags_element, Nat.Digit2[Nat._3, Nat._2]]]]
     def elements_=(value: CArray[nk_config_stack_flags_element, Nat.Digit2[Nat._3, Nat._2]]): Unit = !struct.at(8).asInstanceOf[Ptr[CArray[nk_config_stack_flags_element, Nat.Digit2[Nat._3, Nat._2]]]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_config_stack_flags_element = CArray[CChar, Nat.Digit2[Nat._1, Nat._6]]
 object nk_config_stack_flags_element:
   given _tag: Tag[nk_config_stack_flags_element] = Tag.CArray[CChar, Nat.Digit2[Nat._1, Nat._6]](Tag.Byte, Tag.Digit2[Nat._1, Nat._6](Tag.Nat1, Tag.Nat6))
@@ -947,9 +845,6 @@ object nk_config_stack_flags_element:
     def old_value: nk_flags = !struct.at(8).asInstanceOf[Ptr[nk_flags]]
     def old_value_=(value: nk_flags): Unit = !struct.at(8).asInstanceOf[Ptr[nk_flags]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_config_stack_float = CArray[CChar, Nat.Digit3[Nat._5, Nat._2, Nat._0]]
 object nk_config_stack_float:
   given _tag: Tag[nk_config_stack_float] = Tag.CArray[CChar, Nat.Digit3[Nat._5, Nat._2, Nat._0]](Tag.Byte, Tag.Digit3[Nat._5, Nat._2, Nat._0](Tag.Nat5, Tag.Nat2, Tag.Nat0))
@@ -965,9 +860,6 @@ object nk_config_stack_float:
     def elements: CArray[nk_config_stack_float_element, Nat.Digit2[Nat._3, Nat._2]] = !struct.at(8).asInstanceOf[Ptr[CArray[nk_config_stack_float_element, Nat.Digit2[Nat._3, Nat._2]]]]
     def elements_=(value: CArray[nk_config_stack_float_element, Nat.Digit2[Nat._3, Nat._2]]): Unit = !struct.at(8).asInstanceOf[Ptr[CArray[nk_config_stack_float_element, Nat.Digit2[Nat._3, Nat._2]]]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_config_stack_float_element = CArray[CChar, Nat.Digit2[Nat._1, Nat._6]]
 object nk_config_stack_float_element:
   given _tag: Tag[nk_config_stack_float_element] = Tag.CArray[CChar, Nat.Digit2[Nat._1, Nat._6]](Tag.Byte, Tag.Digit2[Nat._1, Nat._6](Tag.Nat1, Tag.Nat6))
@@ -983,9 +875,6 @@ object nk_config_stack_float_element:
     def old_value: Float = !struct.at(8).asInstanceOf[Ptr[Float]]
     def old_value_=(value: Float): Unit = !struct.at(8).asInstanceOf[Ptr[Float]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_config_stack_style_item = CArray[CChar, Nat.Digit3[Nat._6, Nat._4, Nat._8]]
 object nk_config_stack_style_item:
   given _tag: Tag[nk_config_stack_style_item] = Tag.CArray[CChar, Nat.Digit3[Nat._6, Nat._4, Nat._8]](Tag.Byte, Tag.Digit3[Nat._6, Nat._4, Nat._8](Tag.Nat6, Tag.Nat4, Tag.Nat8))
@@ -1001,9 +890,6 @@ object nk_config_stack_style_item:
     def elements: CArray[nk_config_stack_style_item_element, Nat.Digit2[Nat._1, Nat._6]] = !struct.at(8).asInstanceOf[Ptr[CArray[nk_config_stack_style_item_element, Nat.Digit2[Nat._1, Nat._6]]]]
     def elements_=(value: CArray[nk_config_stack_style_item_element, Nat.Digit2[Nat._1, Nat._6]]): Unit = !struct.at(8).asInstanceOf[Ptr[CArray[nk_config_stack_style_item_element, Nat.Digit2[Nat._1, Nat._6]]]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_config_stack_style_item_element = CArray[CChar, Nat.Digit2[Nat._4, Nat._0]]
 object nk_config_stack_style_item_element:
   given _tag: Tag[nk_config_stack_style_item_element] = Tag.CArray[CChar, Nat.Digit2[Nat._4, Nat._0]](Tag.Byte, Tag.Digit2[Nat._4, Nat._0](Tag.Nat4, Tag.Nat0))
@@ -1019,9 +905,6 @@ object nk_config_stack_style_item_element:
     def old_value: nk_style_item = !struct.at(8).asInstanceOf[Ptr[nk_style_item]]
     def old_value_=(value: nk_style_item): Unit = !struct.at(8).asInstanceOf[Ptr[nk_style_item]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_config_stack_user_font = CArray[CChar, Nat.Digit3[Nat._1, Nat._3, Nat._6]]
 object nk_config_stack_user_font:
   given _tag: Tag[nk_config_stack_user_font] = Tag.CArray[CChar, Nat.Digit3[Nat._1, Nat._3, Nat._6]](Tag.Byte, Tag.Digit3[Nat._1, Nat._3, Nat._6](Tag.Nat1, Tag.Nat3, Tag.Nat6))
@@ -1037,9 +920,6 @@ object nk_config_stack_user_font:
     def elements: CArray[nk_config_stack_user_font_element, Nat._8] = !struct.at(8).asInstanceOf[Ptr[CArray[nk_config_stack_user_font_element, Nat._8]]]
     def elements_=(value: CArray[nk_config_stack_user_font_element, Nat._8]): Unit = !struct.at(8).asInstanceOf[Ptr[CArray[nk_config_stack_user_font_element, Nat._8]]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_config_stack_user_font_element = CArray[CChar, Nat.Digit2[Nat._1, Nat._6]]
 object nk_config_stack_user_font_element:
   given _tag: Tag[nk_config_stack_user_font_element] = Tag.CArray[CChar, Nat.Digit2[Nat._1, Nat._6]](Tag.Byte, Tag.Digit2[Nat._1, Nat._6](Tag.Nat1, Tag.Nat6))
@@ -1055,9 +935,6 @@ object nk_config_stack_user_font_element:
     def old_value: Ptr[nk_user_font] = !struct.at(8).asInstanceOf[Ptr[Ptr[nk_user_font]]]
     def old_value_=(value: Ptr[nk_user_font]): Unit = !struct.at(8).asInstanceOf[Ptr[Ptr[nk_user_font]]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_config_stack_vec2 = CArray[CChar, Nat.Digit3[Nat._2, Nat._6, Nat._4]]
 object nk_config_stack_vec2:
   given _tag: Tag[nk_config_stack_vec2] = Tag.CArray[CChar, Nat.Digit3[Nat._2, Nat._6, Nat._4]](Tag.Byte, Tag.Digit3[Nat._2, Nat._6, Nat._4](Tag.Nat2, Tag.Nat6, Tag.Nat4))
@@ -1073,9 +950,6 @@ object nk_config_stack_vec2:
     def elements: CArray[nk_config_stack_vec2_element, Nat.Digit2[Nat._1, Nat._6]] = !struct.at(8).asInstanceOf[Ptr[CArray[nk_config_stack_vec2_element, Nat.Digit2[Nat._1, Nat._6]]]]
     def elements_=(value: CArray[nk_config_stack_vec2_element, Nat.Digit2[Nat._1, Nat._6]]): Unit = !struct.at(8).asInstanceOf[Ptr[CArray[nk_config_stack_vec2_element, Nat.Digit2[Nat._1, Nat._6]]]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_config_stack_vec2_element = CArray[CChar, Nat.Digit2[Nat._1, Nat._6]]
 object nk_config_stack_vec2_element:
   given _tag: Tag[nk_config_stack_vec2_element] = Tag.CArray[CChar, Nat.Digit2[Nat._1, Nat._6]](Tag.Byte, Tag.Digit2[Nat._1, Nat._6](Tag.Nat1, Tag.Nat6))
@@ -1091,9 +965,6 @@ object nk_config_stack_vec2_element:
     def old_value: nk_vec2 = !struct.at(8).asInstanceOf[Ptr[nk_vec2]]
     def old_value_=(value: nk_vec2): Unit = !struct.at(8).asInstanceOf[Ptr[nk_vec2]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_configuration_stacks = CArray[CChar, Nat.Digit4[Nat._2, Nat._7, Nat._4, Nat._4]]
 object nk_configuration_stacks:
   given _tag: Tag[nk_configuration_stacks] = Tag.CArray[CChar, Nat.Digit4[Nat._2, Nat._7, Nat._4, Nat._4]](Tag.Byte, Tag.Digit4[Nat._2, Nat._7, Nat._4, Nat._4](Tag.Nat2, Tag.Nat7, Tag.Nat4, Tag.Nat4))
@@ -1124,9 +995,6 @@ object nk_configuration_stacks:
     def button_behaviors: nk_config_stack_button_behavior = !struct.at(2608).asInstanceOf[Ptr[nk_config_stack_button_behavior]]
     def button_behaviors_=(value: nk_config_stack_button_behavior): Unit = !struct.at(2608).asInstanceOf[Ptr[nk_config_stack_button_behavior]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_context = CArray[CChar, Nat.Digit5[Nat._1, Nat._6, Nat._8, Nat._4, Nat._0]]
 object nk_context:
   given _tag: Tag[nk_context] = Tag.CArray[CChar, Nat.Digit5[Nat._1, Nat._6, Nat._8, Nat._4, Nat._0]](Tag.Byte, Tag.Digit5[Nat._1, Nat._6, Nat._8, Nat._4, Nat._0](Tag.Nat1, Tag.Nat6, Tag.Nat8, Tag.Nat4, Tag.Nat0))
@@ -1196,9 +1064,6 @@ object nk_context:
     def seq: CUnsignedInt = !struct.at(16836).asInstanceOf[Ptr[CUnsignedInt]]
     def seq_=(value: CUnsignedInt): Unit = !struct.at(16836).asInstanceOf[Ptr[CUnsignedInt]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_convert_config = CArray[CChar, Nat.Digit2[Nat._6, Nat._4]]
 object nk_convert_config:
   given _tag: Tag[nk_convert_config] = Tag.CArray[CChar, Nat.Digit2[Nat._6, Nat._4]](Tag.Byte, Tag.Digit2[Nat._6, Nat._4](Tag.Nat6, Tag.Nat4))
@@ -1238,9 +1103,6 @@ object nk_convert_config:
     def vertex_alignment: nk_size = !struct.at(56).asInstanceOf[Ptr[nk_size]]
     def vertex_alignment_=(value: nk_size): Unit = !struct.at(56).asInstanceOf[Ptr[nk_size]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_cursor = CArray[CChar, Nat.Digit2[Nat._3, Nat._6]]
 object nk_cursor:
   given _tag: Tag[nk_cursor] = Tag.CArray[CChar, Nat.Digit2[Nat._3, Nat._6]](Tag.Byte, Tag.Digit2[Nat._3, Nat._6](Tag.Nat3, Tag.Nat6))
@@ -1259,23 +1121,14 @@ object nk_cursor:
     def offset: nk_vec2 = !struct.at(28).asInstanceOf[Ptr[nk_vec2]]
     def offset_=(value: nk_vec2): Unit = !struct.at(28).asInstanceOf[Ptr[nk_vec2]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_draw_command = CStruct0
 object nk_draw_command:
   given _tag: Tag[nk_draw_command] = Tag.materializeCStruct0Tag
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_draw_list = CStruct0
 object nk_draw_list:
   given _tag: Tag[nk_draw_list] = Tag.materializeCStruct0Tag
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_draw_null_texture = CArray[CChar, Nat.Digit2[Nat._1, Nat._6]]
 object nk_draw_null_texture:
   given _tag: Tag[nk_draw_null_texture] = Tag.CArray[CChar, Nat.Digit2[Nat._1, Nat._6]](Tag.Byte, Tag.Digit2[Nat._1, Nat._6](Tag.Nat1, Tag.Nat6))
@@ -1291,16 +1144,10 @@ object nk_draw_null_texture:
     def uv: nk_vec2 = !struct.at(8).asInstanceOf[Ptr[nk_vec2]]
     def uv_=(value: nk_vec2): Unit = !struct.at(8).asInstanceOf[Ptr[nk_vec2]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_draw_vertex_layout_element = CStruct0
 object nk_draw_vertex_layout_element:
   given _tag: Tag[nk_draw_vertex_layout_element] = Tag.materializeCStruct0Tag
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_edit_state = CArray[CChar, Nat.Digit2[Nat._4, Nat._4]]
 object nk_edit_state:
   given _tag: Tag[nk_edit_state] = Tag.CArray[CChar, Nat.Digit2[Nat._4, Nat._4]](Tag.Byte, Tag.Digit2[Nat._4, Nat._4](Tag.Nat4, Tag.Nat4))
@@ -1343,9 +1190,6 @@ object nk_edit_state:
     def single_line: CUnsignedChar = !struct.at(41).asInstanceOf[Ptr[CUnsignedChar]]
     def single_line_=(value: CUnsignedChar): Unit = !struct.at(41).asInstanceOf[Ptr[CUnsignedChar]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_image = CArray[CChar, Nat.Digit2[Nat._2, Nat._0]]
 object nk_image:
   given _tag: Tag[nk_image] = Tag.CArray[CChar, Nat.Digit2[Nat._2, Nat._0]](Tag.Byte, Tag.Digit2[Nat._2, Nat._0](Tag.Nat2, Tag.Nat0))
@@ -1367,9 +1211,6 @@ object nk_image:
     def region: CArray[nk_ushort, Nat._4] = !struct.at(12).asInstanceOf[Ptr[CArray[nk_ushort, Nat._4]]]
     def region_=(value: CArray[nk_ushort, Nat._4]): Unit = !struct.at(12).asInstanceOf[Ptr[CArray[nk_ushort, Nat._4]]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_input = CArray[CChar, Nat.Digit3[Nat._3, Nat._6, Nat._0]]
 object nk_input:
   given _tag: Tag[nk_input] = Tag.CArray[CChar, Nat.Digit3[Nat._3, Nat._6, Nat._0]](Tag.Byte, Tag.Digit3[Nat._3, Nat._6, Nat._0](Tag.Nat3, Tag.Nat6, Tag.Nat0))
@@ -1385,9 +1226,6 @@ object nk_input:
     def mouse: nk_mouse = !struct.at(260).asInstanceOf[Ptr[nk_mouse]]
     def mouse_=(value: nk_mouse): Unit = !struct.at(260).asInstanceOf[Ptr[nk_mouse]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_key = CArray[CChar, Nat._8]
 object nk_key:
   given _tag: Tag[nk_key] = Tag.CArray[CChar, Nat._8](Tag.Byte, Tag.Nat8)
@@ -1403,9 +1241,6 @@ object nk_key:
     def clicked: CUnsignedInt = !struct.at(4).asInstanceOf[Ptr[CUnsignedInt]]
     def clicked_=(value: CUnsignedInt): Unit = !struct.at(4).asInstanceOf[Ptr[CUnsignedInt]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_keyboard = CArray[CChar, Nat.Digit3[Nat._2, Nat._6, Nat._0]]
 object nk_keyboard:
   given _tag: Tag[nk_keyboard] = Tag.CArray[CChar, Nat.Digit3[Nat._2, Nat._6, Nat._0]](Tag.Byte, Tag.Digit3[Nat._2, Nat._6, Nat._0](Tag.Nat2, Tag.Nat6, Tag.Nat0))
@@ -1424,9 +1259,6 @@ object nk_keyboard:
     def text_len: CInt = !struct.at(256).asInstanceOf[Ptr[CInt]]
     def text_len_=(value: CInt): Unit = !struct.at(256).asInstanceOf[Ptr[CInt]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_list_view = CArray[CChar, Nat.Digit2[Nat._4, Nat._0]]
 object nk_list_view:
   given _tag: Tag[nk_list_view] = Tag.CArray[CChar, Nat.Digit2[Nat._4, Nat._0]](Tag.Byte, Tag.Digit2[Nat._4, Nat._0](Tag.Nat4, Tag.Nat0))
@@ -1457,9 +1289,6 @@ object nk_list_view:
     def scroll_value: nk_uint = !struct.at(32).asInstanceOf[Ptr[nk_uint]]
     def scroll_value_=(value: nk_uint): Unit = !struct.at(32).asInstanceOf[Ptr[nk_uint]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_memory = CArray[CChar, Nat.Digit2[Nat._1, Nat._6]]
 object nk_memory:
   given _tag: Tag[nk_memory] = Tag.CArray[CChar, Nat.Digit2[Nat._1, Nat._6]](Tag.Byte, Tag.Digit2[Nat._1, Nat._6](Tag.Nat1, Tag.Nat6))
@@ -1475,9 +1304,6 @@ object nk_memory:
     def size: nk_size = !struct.at(8).asInstanceOf[Ptr[nk_size]]
     def size_=(value: nk_size): Unit = !struct.at(8).asInstanceOf[Ptr[nk_size]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_memory_status = CArray[CChar, Nat.Digit2[Nat._4, Nat._8]]
 object nk_memory_status:
   given _tag: Tag[nk_memory_status] = Tag.CArray[CChar, Nat.Digit2[Nat._4, Nat._8]](Tag.Byte, Tag.Digit2[Nat._4, Nat._8](Tag.Nat4, Tag.Nat8))
@@ -1505,9 +1331,6 @@ object nk_memory_status:
     def calls: nk_size = !struct.at(40).asInstanceOf[Ptr[nk_size]]
     def calls_=(value: nk_size): Unit = !struct.at(40).asInstanceOf[Ptr[nk_size]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_menu_state = CArray[CChar, Nat.Digit2[Nat._2, Nat._4]]
 object nk_menu_state:
   given _tag: Tag[nk_menu_state] = Tag.CArray[CChar, Nat.Digit2[Nat._2, Nat._4]](Tag.Byte, Tag.Digit2[Nat._2, Nat._4](Tag.Nat2, Tag.Nat4))
@@ -1532,9 +1355,6 @@ object nk_menu_state:
     def offset: nk_scroll = !struct.at(16).asInstanceOf[Ptr[nk_scroll]]
     def offset_=(value: nk_scroll): Unit = !struct.at(16).asInstanceOf[Ptr[nk_scroll]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_mouse = CArray[CChar, Nat.Digit3[Nat._1, Nat._0, Nat._0]]
 object nk_mouse:
   given _tag: Tag[nk_mouse] = Tag.CArray[CChar, Nat.Digit3[Nat._1, Nat._0, Nat._0]](Tag.Byte, Tag.Digit3[Nat._1, Nat._0, Nat._0](Tag.Nat1, Tag.Nat0, Tag.Nat0))
@@ -1568,9 +1388,6 @@ object nk_mouse:
     def ungrab: CUnsignedChar = !struct.at(98).asInstanceOf[Ptr[CUnsignedChar]]
     def ungrab_=(value: CUnsignedChar): Unit = !struct.at(98).asInstanceOf[Ptr[CUnsignedChar]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_mouse_button = CArray[CChar, Nat.Digit2[Nat._1, Nat._6]]
 object nk_mouse_button:
   given _tag: Tag[nk_mouse_button] = Tag.CArray[CChar, Nat.Digit2[Nat._1, Nat._6]](Tag.Byte, Tag.Digit2[Nat._1, Nat._6](Tag.Nat1, Tag.Nat6))
@@ -1589,9 +1406,6 @@ object nk_mouse_button:
     def clicked_pos: nk_vec2 = !struct.at(8).asInstanceOf[Ptr[nk_vec2]]
     def clicked_pos_=(value: nk_vec2): Unit = !struct.at(8).asInstanceOf[Ptr[nk_vec2]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_nine_slice = CArray[CChar, Nat.Digit2[Nat._2, Nat._8]]
 object nk_nine_slice:
   given _tag: Tag[nk_nine_slice] = Tag.CArray[CChar, Nat.Digit2[Nat._2, Nat._8]](Tag.Byte, Tag.Digit2[Nat._2, Nat._8](Tag.Nat2, Tag.Nat8))
@@ -1616,9 +1430,6 @@ object nk_nine_slice:
     def b: nk_ushort = !struct.at(26).asInstanceOf[Ptr[nk_ushort]]
     def b_=(value: nk_ushort): Unit = !struct.at(26).asInstanceOf[Ptr[nk_ushort]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_page = CArray[CChar, Nat.Digit2[Nat._2, Nat._4]]
 object nk_page:
   given _tag: Tag[nk_page] = Tag.CArray[CChar, Nat.Digit2[Nat._2, Nat._4]](Tag.Byte, Tag.Digit2[Nat._2, Nat._4](Tag.Nat2, Tag.Nat4))
@@ -1637,9 +1448,6 @@ object nk_page:
     def win: CArray[nk_page_element, Nat._1] = !struct.at(16).asInstanceOf[Ptr[CArray[nk_page_element, Nat._1]]]
     def win_=(value: CArray[nk_page_element, Nat._1]): Unit = !struct.at(16).asInstanceOf[Ptr[CArray[nk_page_element, Nat._1]]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_page_element = CArray[CChar, Nat.Digit3[Nat._5, Nat._2, Nat._0]]
 object nk_page_element:
   given _tag: Tag[nk_page_element] = Tag.CArray[CChar, Nat.Digit3[Nat._5, Nat._2, Nat._0]](Tag.Byte, Tag.Digit3[Nat._5, Nat._2, Nat._0](Tag.Nat5, Tag.Nat2, Tag.Nat0))
@@ -1658,9 +1466,6 @@ object nk_page_element:
     def prev: Ptr[nk_page_element] = !struct.at(512).asInstanceOf[Ptr[Ptr[nk_page_element]]]
     def prev_=(value: Ptr[nk_page_element]): Unit = !struct.at(512).asInstanceOf[Ptr[Ptr[nk_page_element]]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_panel = CArray[CChar, Nat.Digit3[Nat._4, Nat._6, Nat._4]]
 object nk_panel:
   given _tag: Tag[nk_panel] = Tag.CArray[CChar, Nat.Digit3[Nat._4, Nat._6, Nat._4]](Tag.Byte, Tag.Digit3[Nat._4, Nat._6, Nat._4](Tag.Nat4, Tag.Nat6, Tag.Nat4))
@@ -1724,9 +1529,6 @@ object nk_panel:
     def parent: Ptr[nk_panel] = !struct.at(456).asInstanceOf[Ptr[Ptr[nk_panel]]]
     def parent_=(value: Ptr[nk_panel]): Unit = !struct.at(456).asInstanceOf[Ptr[Ptr[nk_panel]]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_pool = CArray[CChar, Nat.Digit2[Nat._7, Nat._2]]
 object nk_pool:
   given _tag: Tag[nk_pool] = Tag.CArray[CChar, Nat.Digit2[Nat._7, Nat._2]](Tag.Byte, Tag.Digit2[Nat._7, Nat._2](Tag.Nat7, Tag.Nat2))
@@ -1760,9 +1562,6 @@ object nk_pool:
     def cap: nk_size = !struct.at(64).asInstanceOf[Ptr[nk_size]]
     def cap_=(value: nk_size): Unit = !struct.at(64).asInstanceOf[Ptr[nk_size]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_popup_buffer = CArray[CChar, Nat.Digit2[Nat._4, Nat._0]]
 object nk_popup_buffer:
   given _tag: Tag[nk_popup_buffer] = Tag.CArray[CChar, Nat.Digit2[Nat._4, Nat._0]](Tag.Byte, Tag.Digit2[Nat._4, Nat._0](Tag.Nat4, Tag.Nat0))
@@ -1787,9 +1586,6 @@ object nk_popup_buffer:
     def active: nk_bool = !struct.at(32).asInstanceOf[Ptr[nk_bool]]
     def active_=(value: nk_bool): Unit = !struct.at(32).asInstanceOf[Ptr[nk_bool]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_popup_state = CArray[CChar, Nat.Digit2[Nat._9, Nat._6]]
 object nk_popup_state:
   given _tag: Tag[nk_popup_state] = Tag.CArray[CChar, Nat.Digit2[Nat._9, Nat._6]](Tag.Byte, Tag.Digit2[Nat._9, Nat._6](Tag.Nat9, Tag.Nat6))
@@ -1829,9 +1625,6 @@ object nk_popup_state:
     def header: nk_rect = !struct.at(80).asInstanceOf[Ptr[nk_rect]]
     def header_=(value: nk_rect): Unit = !struct.at(80).asInstanceOf[Ptr[nk_rect]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_property_state = CArray[CChar, Nat.Digit3[Nat._1, Nat._0, Nat._4]]
 object nk_property_state:
   given _tag: Tag[nk_property_state] = Tag.CArray[CChar, Nat.Digit3[Nat._1, Nat._0, Nat._4]](Tag.Byte, Tag.Digit3[Nat._1, Nat._0, Nat._4](Tag.Nat1, Tag.Nat0, Tag.Nat4))
@@ -1874,9 +1667,6 @@ object nk_property_state:
     def state: CInt = !struct.at(100).asInstanceOf[Ptr[CInt]]
     def state_=(value: CInt): Unit = !struct.at(100).asInstanceOf[Ptr[CInt]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_property_variant = CArray[CChar, Nat.Digit2[Nat._3, Nat._6]]
 object nk_property_variant:
   given _tag: Tag[nk_property_variant] = Tag.CArray[CChar, Nat.Digit2[Nat._3, Nat._6]](Tag.Byte, Tag.Digit2[Nat._3, Nat._6](Tag.Nat3, Tag.Nat6))
@@ -1901,9 +1691,6 @@ object nk_property_variant:
     def step: nk_property = !struct.at(28).asInstanceOf[Ptr[nk_property]]
     def step_=(value: nk_property): Unit = !struct.at(28).asInstanceOf[Ptr[nk_property]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_rect = CArray[CChar, Nat.Digit2[Nat._1, Nat._6]]
 object nk_rect:
   given _tag: Tag[nk_rect] = Tag.CArray[CChar, Nat.Digit2[Nat._1, Nat._6]](Tag.Byte, Tag.Digit2[Nat._1, Nat._6](Tag.Nat1, Tag.Nat6))
@@ -1925,9 +1712,6 @@ object nk_rect:
     def h: Float = !struct.at(12).asInstanceOf[Ptr[Float]]
     def h_=(value: Float): Unit = !struct.at(12).asInstanceOf[Ptr[Float]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_recti = CArray[CChar, Nat._8]
 object nk_recti:
   given _tag: Tag[nk_recti] = Tag.CArray[CChar, Nat._8](Tag.Byte, Tag.Nat8)
@@ -1949,9 +1733,6 @@ object nk_recti:
     def h: CShort = !struct.at(6).asInstanceOf[Ptr[CShort]]
     def h_=(value: CShort): Unit = !struct.at(6).asInstanceOf[Ptr[CShort]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_row_layout = CArray[CChar, Nat.Digit3[Nat._1, Nat._3, Nat._6]]
 object nk_row_layout:
   given _tag: Tag[nk_row_layout] = Tag.CArray[CChar, Nat.Digit3[Nat._1, Nat._3, Nat._6]](Tag.Byte, Tag.Digit3[Nat._1, Nat._3, Nat._6](Tag.Nat1, Tag.Nat3, Tag.Nat6))
@@ -2000,9 +1781,6 @@ object nk_row_layout:
     def templates: CArray[Float, Nat.Digit2[Nat._1, Nat._6]] = !struct.at(68).asInstanceOf[Ptr[CArray[Float, Nat.Digit2[Nat._1, Nat._6]]]]
     def templates_=(value: CArray[Float, Nat.Digit2[Nat._1, Nat._6]]): Unit = !struct.at(68).asInstanceOf[Ptr[CArray[Float, Nat.Digit2[Nat._1, Nat._6]]]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_scroll = CArray[CChar, Nat._8]
 object nk_scroll:
   given _tag: Tag[nk_scroll] = Tag.CArray[CChar, Nat._8](Tag.Byte, Tag.Nat8)
@@ -2018,9 +1796,6 @@ object nk_scroll:
     def y: nk_uint = !struct.at(4).asInstanceOf[Ptr[nk_uint]]
     def y_=(value: nk_uint): Unit = !struct.at(4).asInstanceOf[Ptr[nk_uint]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_str = CArray[CChar, Nat.Digit3[Nat._1, Nat._2, Nat._8]]
 object nk_str:
   given _tag: Tag[nk_str] = Tag.CArray[CChar, Nat.Digit3[Nat._1, Nat._2, Nat._8]](Tag.Byte, Tag.Digit3[Nat._1, Nat._2, Nat._8](Tag.Nat1, Tag.Nat2, Tag.Nat8))
@@ -2036,9 +1811,6 @@ object nk_str:
     def len: CInt = !struct.at(120).asInstanceOf[Ptr[CInt]]
     def len_=(value: CInt): Unit = !struct.at(120).asInstanceOf[Ptr[CInt]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_style = CArray[CChar, Nat.Digit4[Nat._8, Nat._0, Nat._0, Nat._0]]
 object nk_style:
   given _tag: Tag[nk_style] = Tag.CArray[CChar, Nat.Digit4[Nat._8, Nat._0, Nat._0, Nat._0]](Tag.Byte, Tag.Digit4[Nat._8, Nat._0, Nat._0, Nat._0](Tag.Nat8, Tag.Nat0, Tag.Nat0, Tag.Nat0))
@@ -2114,9 +1886,6 @@ object nk_style:
     def window: nk_style_window = !struct.at(7248).asInstanceOf[Ptr[nk_style_window]]
     def window_=(value: nk_style_window): Unit = !struct.at(7248).asInstanceOf[Ptr[nk_style_window]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_style_button = CArray[CChar, Nat.Digit3[Nat._1, Nat._9, Nat._2]]
 object nk_style_button:
   given _tag: Tag[nk_style_button] = Tag.CArray[CChar, Nat.Digit3[Nat._1, Nat._9, Nat._2]](Tag.Byte, Tag.Digit3[Nat._1, Nat._9, Nat._2](Tag.Nat1, Tag.Nat9, Tag.Nat2))
@@ -2186,9 +1955,6 @@ object nk_style_button:
     def draw_end: CFuncPtr2[Ptr[nk_command_buffer], nk_handle, Unit] = !struct.at(184).asInstanceOf[Ptr[CFuncPtr2[Ptr[nk_command_buffer], nk_handle, Unit]]]
     def draw_end_=(value: CFuncPtr2[Ptr[nk_command_buffer], nk_handle, Unit]): Unit = !struct.at(184).asInstanceOf[Ptr[CFuncPtr2[Ptr[nk_command_buffer], nk_handle, Unit]]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_style_chart = CArray[CChar, Nat.Digit2[Nat._7, Nat._2]]
 object nk_style_chart:
   given _tag: Tag[nk_style_chart] = Tag.CArray[CChar, Nat.Digit2[Nat._7, Nat._2]](Tag.Byte, Tag.Digit2[Nat._7, Nat._2](Tag.Nat7, Tag.Nat2))
@@ -2228,9 +1994,6 @@ object nk_style_chart:
     def show_markers: nk_bool = !struct.at(68).asInstanceOf[Ptr[nk_bool]]
     def show_markers_=(value: nk_bool): Unit = !struct.at(68).asInstanceOf[Ptr[nk_bool]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_style_combo = CArray[CChar, Nat.Digit3[Nat._3, Nat._7, Nat._6]]
 object nk_style_combo:
   given _tag: Tag[nk_style_combo] = Tag.CArray[CChar, Nat.Digit3[Nat._3, Nat._7, Nat._6]](Tag.Byte, Tag.Digit3[Nat._3, Nat._7, Nat._6](Tag.Nat3, Tag.Nat7, Tag.Nat6))
@@ -2303,9 +2066,6 @@ object nk_style_combo:
     def disabled_factor: Float = !struct.at(368).asInstanceOf[Ptr[Float]]
     def disabled_factor_=(value: Float): Unit = !struct.at(368).asInstanceOf[Ptr[Float]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_style_edit = CArray[CChar, Nat.Digit3[Nat._8, Nat._4, Nat._8]]
 object nk_style_edit:
   given _tag: Tag[nk_style_edit] = Tag.CArray[CChar, Nat.Digit3[Nat._8, Nat._4, Nat._8]](Tag.Byte, Tag.Digit3[Nat._8, Nat._4, Nat._8](Tag.Nat8, Tag.Nat4, Tag.Nat8))
@@ -2387,9 +2147,6 @@ object nk_style_edit:
     def disabled_factor: Float = !struct.at(840).asInstanceOf[Ptr[Float]]
     def disabled_factor_=(value: Float): Unit = !struct.at(840).asInstanceOf[Ptr[Float]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_style_item = CArray[CChar, Nat.Digit2[Nat._3, Nat._2]]
 object nk_style_item:
   given _tag: Tag[nk_style_item] = Tag.CArray[CChar, Nat.Digit2[Nat._3, Nat._2]](Tag.Byte, Tag.Digit2[Nat._3, Nat._2](Tag.Nat3, Tag.Nat2))
@@ -2405,9 +2162,6 @@ object nk_style_item:
     def data: nk_style_item_data = !struct.at(4).asInstanceOf[Ptr[nk_style_item_data]]
     def data_=(value: nk_style_item_data): Unit = !struct.at(4).asInstanceOf[Ptr[nk_style_item_data]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_style_progress = CArray[CChar, Nat.Digit3[Nat._2, Nat._5, Nat._6]]
 object nk_style_progress:
   given _tag: Tag[nk_style_progress] = Tag.CArray[CChar, Nat.Digit3[Nat._2, Nat._5, Nat._6]](Tag.Byte, Tag.Digit3[Nat._2, Nat._5, Nat._6](Tag.Nat2, Tag.Nat5, Tag.Nat6))
@@ -2471,9 +2225,6 @@ object nk_style_progress:
     def draw_end: CFuncPtr2[Ptr[nk_command_buffer], nk_handle, Unit] = !struct.at(248).asInstanceOf[Ptr[CFuncPtr2[Ptr[nk_command_buffer], nk_handle, Unit]]]
     def draw_end_=(value: CFuncPtr2[Ptr[nk_command_buffer], nk_handle, Unit]): Unit = !struct.at(248).asInstanceOf[Ptr[CFuncPtr2[Ptr[nk_command_buffer], nk_handle, Unit]]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_style_property = CArray[CChar, Nat.Digit4[Nat._1, Nat._4, Nat._0, Nat._0]]
 object nk_style_property:
   given _tag: Tag[nk_style_property] = Tag.CArray[CChar, Nat.Digit4[Nat._1, Nat._4, Nat._0, Nat._0]](Tag.Byte, Tag.Digit4[Nat._1, Nat._4, Nat._0, Nat._0](Tag.Nat1, Tag.Nat4, Tag.Nat0, Tag.Nat0))
@@ -2543,9 +2294,6 @@ object nk_style_property:
     def draw_end: CFuncPtr2[Ptr[nk_command_buffer], nk_handle, Unit] = !struct.at(1392).asInstanceOf[Ptr[CFuncPtr2[Ptr[nk_command_buffer], nk_handle, Unit]]]
     def draw_end_=(value: CFuncPtr2[Ptr[nk_command_buffer], nk_handle, Unit]): Unit = !struct.at(1392).asInstanceOf[Ptr[CFuncPtr2[Ptr[nk_command_buffer], nk_handle, Unit]]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_style_scrollbar = CArray[CChar, Nat.Digit3[Nat._6, Nat._5, Nat._6]]
 object nk_style_scrollbar:
   given _tag: Tag[nk_style_scrollbar] = Tag.CArray[CChar, Nat.Digit3[Nat._6, Nat._5, Nat._6]](Tag.Byte, Tag.Digit3[Nat._6, Nat._5, Nat._6](Tag.Nat6, Tag.Nat5, Tag.Nat6))
@@ -2624,9 +2372,6 @@ object nk_style_scrollbar:
     def draw_end: CFuncPtr2[Ptr[nk_command_buffer], nk_handle, Unit] = !struct.at(648).asInstanceOf[Ptr[CFuncPtr2[Ptr[nk_command_buffer], nk_handle, Unit]]]
     def draw_end_=(value: CFuncPtr2[Ptr[nk_command_buffer], nk_handle, Unit]): Unit = !struct.at(648).asInstanceOf[Ptr[CFuncPtr2[Ptr[nk_command_buffer], nk_handle, Unit]]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_style_selectable = CArray[CChar, Nat.Digit3[Nat._2, Nat._8, Nat._8]]
 object nk_style_selectable:
   given _tag: Tag[nk_style_selectable] = Tag.CArray[CChar, Nat.Digit3[Nat._2, Nat._8, Nat._8]](Tag.Byte, Tag.Digit3[Nat._2, Nat._8, Nat._8](Tag.Nat2, Tag.Nat8, Tag.Nat8))
@@ -2705,16 +2450,10 @@ object nk_style_selectable:
     def draw_end: CFuncPtr2[Ptr[nk_command_buffer], nk_handle, Unit] = !struct.at(280).asInstanceOf[Ptr[CFuncPtr2[Ptr[nk_command_buffer], nk_handle, Unit]]]
     def draw_end_=(value: CFuncPtr2[Ptr[nk_command_buffer], nk_handle, Unit]): Unit = !struct.at(280).asInstanceOf[Ptr[CFuncPtr2[Ptr[nk_command_buffer], nk_handle, Unit]]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_style_slide = CStruct0
 object nk_style_slide:
   given _tag: Tag[nk_style_slide] = Tag.materializeCStruct0Tag
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_style_slider = CArray[CChar, Nat.Digit3[Nat._6, Nat._8, Nat._0]]
 object nk_style_slider:
   given _tag: Tag[nk_style_slider] = Tag.CArray[CChar, Nat.Digit3[Nat._6, Nat._8, Nat._0]](Tag.Byte, Tag.Digit3[Nat._6, Nat._8, Nat._0](Tag.Nat6, Tag.Nat8, Tag.Nat0))
@@ -2805,9 +2544,6 @@ object nk_style_slider:
     def draw_end: CFuncPtr2[Ptr[nk_command_buffer], nk_handle, Unit] = !struct.at(672).asInstanceOf[Ptr[CFuncPtr2[Ptr[nk_command_buffer], nk_handle, Unit]]]
     def draw_end_=(value: CFuncPtr2[Ptr[nk_command_buffer], nk_handle, Unit]): Unit = !struct.at(672).asInstanceOf[Ptr[CFuncPtr2[Ptr[nk_command_buffer], nk_handle, Unit]]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_style_tab = CArray[CChar, Nat.Digit3[Nat._8, Nat._5, Nat._6]]
 object nk_style_tab:
   given _tag: Tag[nk_style_tab] = Tag.CArray[CChar, Nat.Digit3[Nat._8, Nat._5, Nat._6]](Tag.Byte, Tag.Digit3[Nat._8, Nat._5, Nat._6](Tag.Nat8, Tag.Nat5, Tag.Nat6))
@@ -2865,9 +2601,6 @@ object nk_style_tab:
     def disabled_factor: Float = !struct.at(848).asInstanceOf[Ptr[Float]]
     def disabled_factor_=(value: Float): Unit = !struct.at(848).asInstanceOf[Ptr[Float]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_style_text = CArray[CChar, Nat.Digit2[Nat._2, Nat._0]]
 object nk_style_text:
   given _tag: Tag[nk_style_text] = Tag.CArray[CChar, Nat.Digit2[Nat._2, Nat._0]](Tag.Byte, Tag.Digit2[Nat._2, Nat._0](Tag.Nat2, Tag.Nat0))
@@ -2889,9 +2622,6 @@ object nk_style_text:
     def disabled_factor: Float = !struct.at(16).asInstanceOf[Ptr[Float]]
     def disabled_factor_=(value: Float): Unit = !struct.at(16).asInstanceOf[Ptr[Float]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_style_toggle = CArray[CChar, Nat.Digit3[Nat._2, Nat._4, Nat._0]]
 object nk_style_toggle:
   given _tag: Tag[nk_style_toggle] = Tag.CArray[CChar, Nat.Digit3[Nat._2, Nat._4, Nat._0]](Tag.Byte, Tag.Digit3[Nat._2, Nat._4, Nat._0](Tag.Nat2, Tag.Nat4, Tag.Nat0))
@@ -2961,9 +2691,6 @@ object nk_style_toggle:
     def draw_end: CFuncPtr2[Ptr[nk_command_buffer], nk_handle, Unit] = !struct.at(232).asInstanceOf[Ptr[CFuncPtr2[Ptr[nk_command_buffer], nk_handle, Unit]]]
     def draw_end_=(value: CFuncPtr2[Ptr[nk_command_buffer], nk_handle, Unit]): Unit = !struct.at(232).asInstanceOf[Ptr[CFuncPtr2[Ptr[nk_command_buffer], nk_handle, Unit]]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_style_window = CArray[CChar, Nat.Digit3[Nat._7, Nat._5, Nat._2]]
 object nk_style_window:
   given _tag: Tag[nk_style_window] = Tag.CArray[CChar, Nat.Digit3[Nat._7, Nat._5, Nat._2]](Tag.Byte, Tag.Digit3[Nat._7, Nat._5, Nat._2](Tag.Nat7, Tag.Nat5, Tag.Nat2))
@@ -3063,9 +2790,6 @@ object nk_style_window:
     def tooltip_padding: nk_vec2 = !struct.at(740).asInstanceOf[Ptr[nk_vec2]]
     def tooltip_padding_=(value: nk_vec2): Unit = !struct.at(740).asInstanceOf[Ptr[nk_vec2]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_style_window_header = CArray[CChar, Nat.Digit3[Nat._5, Nat._3, Nat._6]]
 object nk_style_window_header:
   given _tag: Tag[nk_style_window_header] = Tag.CArray[CChar, Nat.Digit3[Nat._5, Nat._3, Nat._6]](Tag.Byte, Tag.Digit3[Nat._5, Nat._3, Nat._6](Tag.Nat5, Tag.Nat3, Tag.Nat6))
@@ -3120,9 +2844,6 @@ object nk_style_window_header:
     def spacing: nk_vec2 = !struct.at(524).asInstanceOf[Ptr[nk_vec2]]
     def spacing_=(value: nk_vec2): Unit = !struct.at(524).asInstanceOf[Ptr[nk_vec2]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_table = CArray[CChar, Nat.Digit3[Nat._5, Nat._0, Nat._4]]
 object nk_table:
   given _tag: Tag[nk_table] = Tag.CArray[CChar, Nat.Digit3[Nat._5, Nat._0, Nat._4]](Tag.Byte, Tag.Digit3[Nat._5, Nat._0, Nat._4](Tag.Nat5, Tag.Nat0, Tag.Nat4))
@@ -3150,9 +2871,6 @@ object nk_table:
     def prev: Ptr[nk_table] = !struct.at(496).asInstanceOf[Ptr[Ptr[nk_table]]]
     def prev_=(value: Ptr[nk_table]): Unit = !struct.at(496).asInstanceOf[Ptr[Ptr[nk_table]]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_text = CArray[CChar, Nat.Digit2[Nat._1, Nat._6]]
 object nk_text:
   given _tag: Tag[nk_text] = Tag.CArray[CChar, Nat.Digit2[Nat._1, Nat._6]](Tag.Byte, Tag.Digit2[Nat._1, Nat._6](Tag.Nat1, Tag.Nat6))
@@ -3171,9 +2889,6 @@ object nk_text:
     def text: nk_color = !struct.at(12).asInstanceOf[Ptr[nk_color]]
     def text_=(value: nk_color): Unit = !struct.at(12).asInstanceOf[Ptr[nk_color]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_text_edit = CArray[CChar, Nat.Digit4[Nat._5, Nat._3, Nat._8, Nat._4]]
 object nk_text_edit:
   given _tag: Tag[nk_text_edit] = Tag.CArray[CChar, Nat.Digit4[Nat._5, Nat._3, Nat._8, Nat._4]](Tag.Byte, Tag.Digit4[Nat._5, Nat._3, Nat._8, Nat._4](Tag.Nat5, Tag.Nat3, Tag.Nat8, Tag.Nat4))
@@ -3231,9 +2946,6 @@ object nk_text_edit:
     def undo: nk_text_undo_state = !struct.at(192).asInstanceOf[Ptr[nk_text_undo_state]]
     def undo_=(value: nk_text_undo_state): Unit = !struct.at(192).asInstanceOf[Ptr[nk_text_undo_state]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_text_edit_row = CArray[CChar, Nat.Digit2[Nat._2, Nat._4]]
 object nk_text_edit_row:
   given _tag: Tag[nk_text_edit_row] = Tag.CArray[CChar, Nat.Digit2[Nat._2, Nat._4]](Tag.Byte, Tag.Digit2[Nat._2, Nat._4](Tag.Nat2, Tag.Nat4))
@@ -3261,9 +2973,6 @@ object nk_text_edit_row:
     def num_chars: CInt = !struct.at(20).asInstanceOf[Ptr[CInt]]
     def num_chars_=(value: CInt): Unit = !struct.at(20).asInstanceOf[Ptr[CInt]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_text_find = CArray[CChar, Nat.Digit2[Nat._2, Nat._4]]
 object nk_text_find:
   given _tag: Tag[nk_text_find] = Tag.CArray[CChar, Nat.Digit2[Nat._2, Nat._4]](Tag.Byte, Tag.Digit2[Nat._2, Nat._4](Tag.Nat2, Tag.Nat4))
@@ -3291,9 +3000,6 @@ object nk_text_find:
     def prev_first: CInt = !struct.at(20).asInstanceOf[Ptr[CInt]]
     def prev_first_=(value: CInt): Unit = !struct.at(20).asInstanceOf[Ptr[CInt]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_text_undo_record = CArray[CChar, Nat.Digit2[Nat._1, Nat._2]]
 object nk_text_undo_record:
   given _tag: Tag[nk_text_undo_record] = Tag.CArray[CChar, Nat.Digit2[Nat._1, Nat._2]](Tag.Byte, Tag.Digit2[Nat._1, Nat._2](Tag.Nat1, Tag.Nat2))
@@ -3315,9 +3021,6 @@ object nk_text_undo_record:
     def char_storage: CShort = !struct.at(8).asInstanceOf[Ptr[CShort]]
     def char_storage_=(value: CShort): Unit = !struct.at(8).asInstanceOf[Ptr[CShort]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_text_undo_state = CArray[CChar, Nat.Digit4[Nat._5, Nat._1, Nat._9, Nat._2]]
 object nk_text_undo_state:
   given _tag: Tag[nk_text_undo_state] = Tag.CArray[CChar, Nat.Digit4[Nat._5, Nat._1, Nat._9, Nat._2]](Tag.Byte, Tag.Digit4[Nat._5, Nat._1, Nat._9, Nat._2](Tag.Nat5, Tag.Nat1, Tag.Nat9, Tag.Nat2))
@@ -3345,9 +3048,6 @@ object nk_text_undo_state:
     def redo_char_point: CShort = !struct.at(5190).asInstanceOf[Ptr[CShort]]
     def redo_char_point_=(value: CShort): Unit = !struct.at(5190).asInstanceOf[Ptr[CShort]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_user_font = CArray[CChar, Nat.Digit2[Nat._2, Nat._4]]
 object nk_user_font:
   given _tag: Tag[nk_user_font] = Tag.CArray[CChar, Nat.Digit2[Nat._2, Nat._4]](Tag.Byte, Tag.Digit2[Nat._2, Nat._4](Tag.Nat2, Tag.Nat4))
@@ -3366,16 +3066,10 @@ object nk_user_font:
     def width: nk_text_width_f = !struct.at(16).asInstanceOf[Ptr[nk_text_width_f]]
     def width_=(value: nk_text_width_f): Unit = !struct.at(16).asInstanceOf[Ptr[nk_text_width_f]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_user_font_glyph = CStruct0
 object nk_user_font_glyph:
   given _tag: Tag[nk_user_font_glyph] = Tag.materializeCStruct0Tag
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_vec2 = CArray[CChar, Nat._8]
 object nk_vec2:
   given _tag: Tag[nk_vec2] = Tag.CArray[CChar, Nat._8](Tag.Byte, Tag.Nat8)
@@ -3391,9 +3085,6 @@ object nk_vec2:
     def y: Float = !struct.at(4).asInstanceOf[Ptr[Float]]
     def y_=(value: Float): Unit = !struct.at(4).asInstanceOf[Ptr[Float]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_vec2i = CArray[CChar, Nat._4]
 object nk_vec2i:
   given _tag: Tag[nk_vec2i] = Tag.CArray[CChar, Nat._4](Tag.Byte, Tag.Nat4)
@@ -3409,9 +3100,6 @@ object nk_vec2i:
     def y: CShort = !struct.at(2).asInstanceOf[Ptr[CShort]]
     def y_=(value: CShort): Unit = !struct.at(2).asInstanceOf[Ptr[CShort]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_window = CArray[CChar, Nat.Digit3[Nat._4, Nat._8, Nat._0]]
 object nk_window:
   given _tag: Tag[nk_window] = Tag.CArray[CChar, Nat.Digit3[Nat._4, Nat._8, Nat._0]](Tag.Byte, Tag.Digit3[Nat._4, Nat._8, Nat._0](Tag.Nat4, Tag.Nat8, Tag.Nat0))
@@ -3478,9 +3166,6 @@ object nk_window:
     def parent: Ptr[nk_window] = !struct.at(472).asInstanceOf[Ptr[Ptr[nk_window]]]
     def parent_=(value: Ptr[nk_window]): Unit = !struct.at(472).asInstanceOf[Ptr[Ptr[nk_window]]] = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type stbrp_context = CStruct9[CInt, CInt, CInt, CInt, CInt, CInt, Ptr[Byte], Ptr[Byte], CArray[Ptr[Byte], Nat._2]]
 object stbrp_context:
   given _tag: Tag[stbrp_context] = Tag.materializeCStruct9Tag[CInt, CInt, CInt, CInt, CInt, CInt, Ptr[Byte], Ptr[Byte], CArray[Ptr[Byte], Nat._2]]
@@ -3517,9 +3202,6 @@ object stbrp_context:
     def extra : CArray[stbrp_node, Nat._2] = struct._9.asInstanceOf[CArray[stbrp_node, Nat._2]]
     def extra_=(value: CArray[stbrp_node, Nat._2]): Unit = !struct.at9 = value.asInstanceOf[CArray[Ptr[Byte], Nat._2]]
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type stbrp_node = CStruct3[stbrp_coord, stbrp_coord, Ptr[Byte]]
 object stbrp_node:
   given _tag: Tag[stbrp_node] = Tag.materializeCStruct3Tag[stbrp_coord, stbrp_coord, Ptr[Byte]]
@@ -3538,9 +3220,6 @@ object stbrp_node:
     def next : Ptr[stbrp_node] = struct._3.asInstanceOf[Ptr[stbrp_node]]
     def next_=(value: Ptr[stbrp_node]): Unit = !struct.at3 = value.asInstanceOf[Ptr[Byte]]
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type stbrp_rect = CStruct6[CInt, stbrp_coord, stbrp_coord, stbrp_coord, stbrp_coord, CInt]
 object stbrp_rect:
   given _tag: Tag[stbrp_rect] = Tag.materializeCStruct6Tag[CInt, stbrp_coord, stbrp_coord, stbrp_coord, stbrp_coord, CInt]
@@ -3568,9 +3247,6 @@ object stbrp_rect:
     def was_packed : CInt = struct._6
     def was_packed_=(value: CInt): Unit = !struct.at6 = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type stbtt__bitmap = CStruct4[CInt, CInt, CInt, Ptr[CUnsignedChar]]
 object stbtt__bitmap:
   given _tag: Tag[stbtt__bitmap] = Tag.materializeCStruct4Tag[CInt, CInt, CInt, Ptr[CUnsignedChar]]
@@ -3592,9 +3268,6 @@ object stbtt__bitmap:
     def pixels : Ptr[CUnsignedChar] = struct._4
     def pixels_=(value: Ptr[CUnsignedChar]): Unit = !struct.at4 = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type stbtt__buf = CStruct3[Ptr[CUnsignedChar], CInt, CInt]
 object stbtt__buf:
   given _tag: Tag[stbtt__buf] = Tag.materializeCStruct3Tag[Ptr[CUnsignedChar], CInt, CInt]
@@ -3613,9 +3286,6 @@ object stbtt__buf:
     def size : CInt = struct._3
     def size_=(value: CInt): Unit = !struct.at3 = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type stbtt_aligned_quad = CStruct8[Float, Float, Float, Float, Float, Float, Float, Float]
 object stbtt_aligned_quad:
   given _tag: Tag[stbtt_aligned_quad] = Tag.materializeCStruct8Tag[Float, Float, Float, Float, Float, Float, Float, Float]
@@ -3649,9 +3319,6 @@ object stbtt_aligned_quad:
     def t1 : Float = struct._8
     def t1_=(value: Float): Unit = !struct.at8 = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type stbtt_bakedchar = CStruct7[CUnsignedShort, CUnsignedShort, CUnsignedShort, CUnsignedShort, Float, Float, Float]
 object stbtt_bakedchar:
   given _tag: Tag[stbtt_bakedchar] = Tag.materializeCStruct7Tag[CUnsignedShort, CUnsignedShort, CUnsignedShort, CUnsignedShort, Float, Float, Float]
@@ -3682,9 +3349,6 @@ object stbtt_bakedchar:
     def xadvance : Float = struct._7
     def xadvance_=(value: Float): Unit = !struct.at7 = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type stbtt_fontinfo = CStruct20[Ptr[Byte], Ptr[CUnsignedChar], CInt, CInt, CInt, CInt, CInt, CInt, CInt, CInt, CInt, CInt, CInt, CInt, stbtt__buf, stbtt__buf, stbtt__buf, stbtt__buf, stbtt__buf, stbtt__buf]
 object stbtt_fontinfo:
   given _tag: Tag[stbtt_fontinfo] = Tag.materializeCStruct20Tag[Ptr[Byte], Ptr[CUnsignedChar], CInt, CInt, CInt, CInt, CInt, CInt, CInt, CInt, CInt, CInt, CInt, CInt, stbtt__buf, stbtt__buf, stbtt__buf, stbtt__buf, stbtt__buf, stbtt__buf]
@@ -3754,9 +3418,6 @@ object stbtt_fontinfo:
     def fdselect : stbtt__buf = struct._20
     def fdselect_=(value: stbtt__buf): Unit = !struct.at20 = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type stbtt_kerningentry = CStruct3[CInt, CInt, CInt]
 object stbtt_kerningentry:
   given _tag: Tag[stbtt_kerningentry] = Tag.materializeCStruct3Tag[CInt, CInt, CInt]
@@ -3775,9 +3436,6 @@ object stbtt_kerningentry:
     def advance : CInt = struct._3
     def advance_=(value: CInt): Unit = !struct.at3 = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type stbtt_pack_context = CStruct11[Ptr[Byte], Ptr[Byte], CInt, CInt, CInt, CInt, CInt, CUnsignedInt, CUnsignedInt, Ptr[CUnsignedChar], Ptr[Byte]]
 object stbtt_pack_context:
   given _tag: Tag[stbtt_pack_context] = Tag.materializeCStruct11Tag[Ptr[Byte], Ptr[Byte], CInt, CInt, CInt, CInt, CInt, CUnsignedInt, CUnsignedInt, Ptr[CUnsignedChar], Ptr[Byte]]
@@ -3820,9 +3478,6 @@ object stbtt_pack_context:
     def nodes : Ptr[Byte] = struct._11
     def nodes_=(value: Ptr[Byte]): Unit = !struct.at11 = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type stbtt_pack_range = CStruct7[Float, CInt, Ptr[CInt], CInt, Ptr[stbtt_packedchar], CUnsignedChar, CUnsignedChar]
 object stbtt_pack_range:
   given _tag: Tag[stbtt_pack_range] = Tag.materializeCStruct7Tag[Float, CInt, Ptr[CInt], CInt, Ptr[stbtt_packedchar], CUnsignedChar, CUnsignedChar]
@@ -3853,9 +3508,6 @@ object stbtt_pack_range:
     def v_oversample : CUnsignedChar = struct._7
     def v_oversample_=(value: CUnsignedChar): Unit = !struct.at7 = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type stbtt_packedchar = CStruct9[CUnsignedShort, CUnsignedShort, CUnsignedShort, CUnsignedShort, Float, Float, Float, Float, Float]
 object stbtt_packedchar:
   given _tag: Tag[stbtt_packedchar] = Tag.materializeCStruct9Tag[CUnsignedShort, CUnsignedShort, CUnsignedShort, CUnsignedShort, Float, Float, Float, Float, Float]
@@ -3892,9 +3544,6 @@ object stbtt_packedchar:
     def yoff2 : Float = struct._9
     def yoff2_=(value: Float): Unit = !struct.at9 = value
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type stbtt_vertex = CStruct8[CShort, CShort, CShort, CShort, CShort, CShort, CUnsignedChar, CUnsignedChar]
 object stbtt_vertex:
   given _tag: Tag[stbtt_vertex] = Tag.materializeCStruct8Tag[CShort, CShort, CShort, CShort, CShort, CShort, CUnsignedChar, CUnsignedChar]

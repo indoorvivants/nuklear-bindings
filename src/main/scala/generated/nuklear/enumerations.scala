@@ -11,9 +11,6 @@ private[nuklear] trait CEnumU[T](using eq: T =:= UInt):
    inline def int: CInt = eq.apply(t).toInt
    inline def uint: CUnsignedInt = eq.apply(t)
    inline def value: CUnsignedInt = eq.apply(t)
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_allocation_type = CUnsignedInt
 object nk_allocation_type extends CEnumU[nk_allocation_type]:
   given _tag: Tag[nk_allocation_type] = Tag.UInt
@@ -30,9 +27,6 @@ object nk_allocation_type extends CEnumU[nk_allocation_type]:
     inline def |(b: nk_allocation_type): nk_allocation_type = a | b
     inline def is(b: nk_allocation_type): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_anti_aliasing = CUnsignedInt
 object nk_anti_aliasing extends CEnumU[nk_anti_aliasing]:
   given _tag: Tag[nk_anti_aliasing] = Tag.UInt
@@ -49,9 +43,6 @@ object nk_anti_aliasing extends CEnumU[nk_anti_aliasing]:
     inline def |(b: nk_anti_aliasing): nk_anti_aliasing = a | b
     inline def is(b: nk_anti_aliasing): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_buffer_allocation_type = CUnsignedInt
 object nk_buffer_allocation_type extends CEnumU[nk_buffer_allocation_type]:
   given _tag: Tag[nk_buffer_allocation_type] = Tag.UInt
@@ -70,9 +61,6 @@ object nk_buffer_allocation_type extends CEnumU[nk_buffer_allocation_type]:
     inline def |(b: nk_buffer_allocation_type): nk_buffer_allocation_type = a | b
     inline def is(b: nk_buffer_allocation_type): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_button_behavior = CUnsignedInt
 object nk_button_behavior extends CEnumU[nk_button_behavior]:
   given _tag: Tag[nk_button_behavior] = Tag.UInt
@@ -89,9 +77,6 @@ object nk_button_behavior extends CEnumU[nk_button_behavior]:
     inline def |(b: nk_button_behavior): nk_button_behavior = a | b
     inline def is(b: nk_button_behavior): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_buttons = CUnsignedInt
 object nk_buttons extends CEnumU[nk_buttons]:
   given _tag: Tag[nk_buttons] = Tag.UInt
@@ -114,9 +99,6 @@ object nk_buttons extends CEnumU[nk_buttons]:
     inline def |(b: nk_buttons): nk_buttons = a | b
     inline def is(b: nk_buttons): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_chart_event = CUnsignedInt
 object nk_chart_event extends CEnumU[nk_chart_event]:
   given _tag: Tag[nk_chart_event] = Tag.UInt
@@ -133,9 +115,6 @@ object nk_chart_event extends CEnumU[nk_chart_event]:
     inline def |(b: nk_chart_event): nk_chart_event = a | b
     inline def is(b: nk_chart_event): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_chart_type = CUnsignedInt
 object nk_chart_type extends CEnumU[nk_chart_type]:
   given _tag: Tag[nk_chart_type] = Tag.UInt
@@ -154,9 +133,6 @@ object nk_chart_type extends CEnumU[nk_chart_type]:
     inline def |(b: nk_chart_type): nk_chart_type = a | b
     inline def is(b: nk_chart_type): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_collapse_states = CUnsignedInt
 object nk_collapse_states extends CEnumU[nk_collapse_states]:
   given _tag: Tag[nk_collapse_states] = Tag.UInt
@@ -173,9 +149,6 @@ object nk_collapse_states extends CEnumU[nk_collapse_states]:
     inline def |(b: nk_collapse_states): nk_collapse_states = a | b
     inline def is(b: nk_collapse_states): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_color_format = CUnsignedInt
 object nk_color_format extends CEnumU[nk_color_format]:
   given _tag: Tag[nk_color_format] = Tag.UInt
@@ -192,9 +165,6 @@ object nk_color_format extends CEnumU[nk_color_format]:
     inline def |(b: nk_color_format): nk_color_format = a | b
     inline def is(b: nk_color_format): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_command_clipping = CUnsignedInt
 object nk_command_clipping extends CEnumU[nk_command_clipping]:
   given _tag: Tag[nk_command_clipping] = Tag.UInt
@@ -211,9 +181,6 @@ object nk_command_clipping extends CEnumU[nk_command_clipping]:
     inline def |(b: nk_command_clipping): nk_command_clipping = a | b
     inline def is(b: nk_command_clipping): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_command_type = CUnsignedInt
 object nk_command_type extends CEnumU[nk_command_type]:
   given _tag: Tag[nk_command_type] = Tag.UInt
@@ -264,9 +231,6 @@ object nk_command_type extends CEnumU[nk_command_type]:
     inline def |(b: nk_command_type): nk_command_type = a | b
     inline def is(b: nk_command_type): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_convert_result = CUnsignedInt
 object nk_convert_result extends CEnumU[nk_convert_result]:
   given _tag: Tag[nk_convert_result] = Tag.UInt
@@ -289,9 +253,6 @@ object nk_convert_result extends CEnumU[nk_convert_result]:
     inline def |(b: nk_convert_result): nk_convert_result = a | b
     inline def is(b: nk_convert_result): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_edit_events = CUnsignedInt
 object nk_edit_events extends CEnumU[nk_edit_events]:
   given _tag: Tag[nk_edit_events] = Tag.UInt
@@ -314,9 +275,6 @@ object nk_edit_events extends CEnumU[nk_edit_events]:
     inline def |(b: nk_edit_events): nk_edit_events = a | b
     inline def is(b: nk_edit_events): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_edit_flags = CUnsignedInt
 object nk_edit_flags extends CEnumU[nk_edit_flags]:
   given _tag: Tag[nk_edit_flags] = Tag.UInt
@@ -355,9 +313,6 @@ object nk_edit_flags extends CEnumU[nk_edit_flags]:
     inline def |(b: nk_edit_flags): nk_edit_flags = a | b
     inline def is(b: nk_edit_flags): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_edit_types = CUnsignedInt
 object nk_edit_types extends CEnumU[nk_edit_types]:
   given _tag: Tag[nk_edit_types] = Tag.UInt
@@ -378,9 +333,6 @@ object nk_edit_types extends CEnumU[nk_edit_types]:
     inline def |(b: nk_edit_types): nk_edit_types = a | b
     inline def is(b: nk_edit_types): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_heading = CUnsignedInt
 object nk_heading extends CEnumU[nk_heading]:
   given _tag: Tag[nk_heading] = Tag.UInt
@@ -401,9 +353,6 @@ object nk_heading extends CEnumU[nk_heading]:
     inline def |(b: nk_heading): nk_heading = a | b
     inline def is(b: nk_heading): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_keys = CUnsignedInt
 object nk_keys extends CEnumU[nk_keys]:
   given _tag: Tag[nk_keys] = Tag.UInt
@@ -478,9 +427,6 @@ object nk_keys extends CEnumU[nk_keys]:
     inline def |(b: nk_keys): nk_keys = a | b
     inline def is(b: nk_keys): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_layout_format = CUnsignedInt
 object nk_layout_format extends CEnumU[nk_layout_format]:
   given _tag: Tag[nk_layout_format] = Tag.UInt
@@ -497,9 +443,6 @@ object nk_layout_format extends CEnumU[nk_layout_format]:
     inline def |(b: nk_layout_format): nk_layout_format = a | b
     inline def is(b: nk_layout_format): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_modify = CUnsignedInt
 object nk_modify extends CEnumU[nk_modify]:
   given _tag: Tag[nk_modify] = Tag.UInt
@@ -516,9 +459,6 @@ object nk_modify extends CEnumU[nk_modify]:
     inline def |(b: nk_modify): nk_modify = a | b
     inline def is(b: nk_modify): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_orientation = CUnsignedInt
 object nk_orientation extends CEnumU[nk_orientation]:
   given _tag: Tag[nk_orientation] = Tag.UInt
@@ -535,9 +475,6 @@ object nk_orientation extends CEnumU[nk_orientation]:
     inline def |(b: nk_orientation): nk_orientation = a | b
     inline def is(b: nk_orientation): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_panel_flags = CUnsignedInt
 object nk_panel_flags extends CEnumU[nk_panel_flags]:
   given _tag: Tag[nk_panel_flags] = Tag.UInt
@@ -572,9 +509,6 @@ object nk_panel_flags extends CEnumU[nk_panel_flags]:
     inline def |(b: nk_panel_flags): nk_panel_flags = a | b
     inline def is(b: nk_panel_flags): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_panel_row_layout_type = CUnsignedInt
 object nk_panel_row_layout_type extends CEnumU[nk_panel_row_layout_type]:
   given _tag: Tag[nk_panel_row_layout_type] = Tag.UInt
@@ -607,9 +541,6 @@ object nk_panel_row_layout_type extends CEnumU[nk_panel_row_layout_type]:
     inline def |(b: nk_panel_row_layout_type): nk_panel_row_layout_type = a | b
     inline def is(b: nk_panel_row_layout_type): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_panel_set = CUnsignedInt
 object nk_panel_set extends CEnumU[nk_panel_set]:
   given _tag: Tag[nk_panel_set] = Tag.UInt
@@ -628,9 +559,6 @@ object nk_panel_set extends CEnumU[nk_panel_set]:
     inline def |(b: nk_panel_set): nk_panel_set = a | b
     inline def is(b: nk_panel_set): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_panel_type = CUnsignedInt
 object nk_panel_type extends CEnumU[nk_panel_type]:
   given _tag: Tag[nk_panel_type] = Tag.UInt
@@ -659,9 +587,6 @@ object nk_panel_type extends CEnumU[nk_panel_type]:
     inline def |(b: nk_panel_type): nk_panel_type = a | b
     inline def is(b: nk_panel_type): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_popup_type = CUnsignedInt
 object nk_popup_type extends CEnumU[nk_popup_type]:
   given _tag: Tag[nk_popup_type] = Tag.UInt
@@ -678,9 +603,6 @@ object nk_popup_type extends CEnumU[nk_popup_type]:
     inline def |(b: nk_popup_type): nk_popup_type = a | b
     inline def is(b: nk_popup_type): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_property_filter = CUnsignedInt
 object nk_property_filter extends CEnumU[nk_property_filter]:
   given _tag: Tag[nk_property_filter] = Tag.UInt
@@ -697,9 +619,6 @@ object nk_property_filter extends CEnumU[nk_property_filter]:
     inline def |(b: nk_property_filter): nk_property_filter = a | b
     inline def is(b: nk_property_filter): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_property_kind = CUnsignedInt
 object nk_property_kind extends CEnumU[nk_property_kind]:
   given _tag: Tag[nk_property_kind] = Tag.UInt
@@ -718,9 +637,6 @@ object nk_property_kind extends CEnumU[nk_property_kind]:
     inline def |(b: nk_property_kind): nk_property_kind = a | b
     inline def is(b: nk_property_kind): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_property_status = CUnsignedInt
 object nk_property_status extends CEnumU[nk_property_status]:
   given _tag: Tag[nk_property_status] = Tag.UInt
@@ -739,9 +655,6 @@ object nk_property_status extends CEnumU[nk_property_status]:
     inline def |(b: nk_property_status): nk_property_status = a | b
     inline def is(b: nk_property_status): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_show_states = CUnsignedInt
 object nk_show_states extends CEnumU[nk_show_states]:
   given _tag: Tag[nk_show_states] = Tag.UInt
@@ -758,9 +671,6 @@ object nk_show_states extends CEnumU[nk_show_states]:
     inline def |(b: nk_show_states): nk_show_states = a | b
     inline def is(b: nk_show_states): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_style_colors = CUnsignedInt
 object nk_style_colors extends CEnumU[nk_style_colors]:
   given _tag: Tag[nk_style_colors] = Tag.UInt
@@ -831,9 +741,6 @@ object nk_style_colors extends CEnumU[nk_style_colors]:
     inline def |(b: nk_style_colors): nk_style_colors = a | b
     inline def is(b: nk_style_colors): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_style_cursor = CUnsignedInt
 object nk_style_cursor extends CEnumU[nk_style_cursor]:
   given _tag: Tag[nk_style_cursor] = Tag.UInt
@@ -862,9 +769,6 @@ object nk_style_cursor extends CEnumU[nk_style_cursor]:
     inline def |(b: nk_style_cursor): nk_style_cursor = a | b
     inline def is(b: nk_style_cursor): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_style_header_align = CUnsignedInt
 object nk_style_header_align extends CEnumU[nk_style_header_align]:
   given _tag: Tag[nk_style_header_align] = Tag.UInt
@@ -881,9 +785,6 @@ object nk_style_header_align extends CEnumU[nk_style_header_align]:
     inline def |(b: nk_style_header_align): nk_style_header_align = a | b
     inline def is(b: nk_style_header_align): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_style_item_type = CUnsignedInt
 object nk_style_item_type extends CEnumU[nk_style_item_type]:
   given _tag: Tag[nk_style_item_type] = Tag.UInt
@@ -902,9 +803,6 @@ object nk_style_item_type extends CEnumU[nk_style_item_type]:
     inline def |(b: nk_style_item_type): nk_style_item_type = a | b
     inline def is(b: nk_style_item_type): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_symbol_type = CUnsignedInt
 object nk_symbol_type extends CEnumU[nk_symbol_type]:
   given _tag: Tag[nk_symbol_type] = Tag.UInt
@@ -945,9 +843,6 @@ object nk_symbol_type extends CEnumU[nk_symbol_type]:
     inline def |(b: nk_symbol_type): nk_symbol_type = a | b
     inline def is(b: nk_symbol_type): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_text_align = CUnsignedInt
 object nk_text_align extends CEnumU[nk_text_align]:
   given _tag: Tag[nk_text_align] = Tag.UInt
@@ -972,9 +867,6 @@ object nk_text_align extends CEnumU[nk_text_align]:
     inline def |(b: nk_text_align): nk_text_align = a | b
     inline def is(b: nk_text_align): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_text_alignment = CUnsignedInt
 object nk_text_alignment extends CEnumU[nk_text_alignment]:
   given _tag: Tag[nk_text_alignment] = Tag.UInt
@@ -993,9 +885,6 @@ object nk_text_alignment extends CEnumU[nk_text_alignment]:
     inline def |(b: nk_text_alignment): nk_text_alignment = a | b
     inline def is(b: nk_text_alignment): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_text_edit_mode = CUnsignedInt
 object nk_text_edit_mode extends CEnumU[nk_text_edit_mode]:
   given _tag: Tag[nk_text_edit_mode] = Tag.UInt
@@ -1014,9 +903,6 @@ object nk_text_edit_mode extends CEnumU[nk_text_edit_mode]:
     inline def |(b: nk_text_edit_mode): nk_text_edit_mode = a | b
     inline def is(b: nk_text_edit_mode): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_text_edit_type = CUnsignedInt
 object nk_text_edit_type extends CEnumU[nk_text_edit_type]:
   given _tag: Tag[nk_text_edit_type] = Tag.UInt
@@ -1033,9 +919,6 @@ object nk_text_edit_type extends CEnumU[nk_text_edit_type]:
     inline def |(b: nk_text_edit_type): nk_text_edit_type = a | b
     inline def is(b: nk_text_edit_type): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_toggle_type = CUnsignedInt
 object nk_toggle_type extends CEnumU[nk_toggle_type]:
   given _tag: Tag[nk_toggle_type] = Tag.UInt
@@ -1052,9 +935,6 @@ object nk_toggle_type extends CEnumU[nk_toggle_type]:
     inline def |(b: nk_toggle_type): nk_toggle_type = a | b
     inline def is(b: nk_toggle_type): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_tree_type = CUnsignedInt
 object nk_tree_type extends CEnumU[nk_tree_type]:
   given _tag: Tag[nk_tree_type] = Tag.UInt
@@ -1071,9 +951,6 @@ object nk_tree_type extends CEnumU[nk_tree_type]:
     inline def |(b: nk_tree_type): nk_tree_type = a | b
     inline def is(b: nk_tree_type): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_widget_align = CUnsignedInt
 object nk_widget_align extends CEnumU[nk_widget_align]:
   given _tag: Tag[nk_widget_align] = Tag.UInt
@@ -1098,9 +975,6 @@ object nk_widget_align extends CEnumU[nk_widget_align]:
     inline def |(b: nk_widget_align): nk_widget_align = a | b
     inline def is(b: nk_widget_align): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_widget_alignment = CUnsignedInt
 object nk_widget_alignment extends CEnumU[nk_widget_alignment]:
   given _tag: Tag[nk_widget_alignment] = Tag.UInt
@@ -1119,9 +993,6 @@ object nk_widget_alignment extends CEnumU[nk_widget_alignment]:
     inline def |(b: nk_widget_alignment): nk_widget_alignment = a | b
     inline def is(b: nk_widget_alignment): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_widget_layout_states = CUnsignedInt
 object nk_widget_layout_states extends CEnumU[nk_widget_layout_states]:
   given _tag: Tag[nk_widget_layout_states] = Tag.UInt
@@ -1142,9 +1013,6 @@ object nk_widget_layout_states extends CEnumU[nk_widget_layout_states]:
     inline def |(b: nk_widget_layout_states): nk_widget_layout_states = a | b
     inline def is(b: nk_widget_layout_states): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_widget_states = CUnsignedInt
 object nk_widget_states extends CEnumU[nk_widget_states]:
   given _tag: Tag[nk_widget_states] = Tag.UInt
@@ -1173,9 +1041,6 @@ object nk_widget_states extends CEnumU[nk_widget_states]:
     inline def |(b: nk_widget_states): nk_widget_states = a | b
     inline def is(b: nk_widget_states): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_window_flags = CUnsignedInt
 object nk_window_flags extends CEnumU[nk_window_flags]:
   given _tag: Tag[nk_window_flags] = Tag.UInt
@@ -1204,9 +1069,6 @@ object nk_window_flags extends CEnumU[nk_window_flags]:
     inline def |(b: nk_window_flags): nk_window_flags = a | b
     inline def is(b: nk_window_flags): Boolean = (a & b) == b
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_window_insert_location = CUnsignedInt
 object nk_window_insert_location extends CEnumU[nk_window_insert_location]:
   given _tag: Tag[nk_window_insert_location] = Tag.UInt

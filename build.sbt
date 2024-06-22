@@ -21,7 +21,7 @@ bindgenBindings := Seq(
     ),
     multiFile = true,
     opaqueStructs = Set("nk_*")
-  )
+  ).withNoLocation(true)
 )
 
 bindgenMode := BindgenMode.Manual(

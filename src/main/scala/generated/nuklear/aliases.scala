@@ -5,9 +5,6 @@ import _root_.scala.scalanative.unsigned.*
 import _root_.scala.scalanative.libc.*
 import _root_.scala.scalanative.*
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type _dummy_array429 = CArray[CChar, Nat._1]
 object _dummy_array429: 
   given _tag: Tag[_dummy_array429] = Tag.CArray[CChar, Nat._1](Tag.Byte, Tag.Nat1)
@@ -15,9 +12,6 @@ object _dummy_array429:
   extension (v: _dummy_array429)
     inline def value: CArray[CChar, Nat._1] = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type _dummy_array430 = CArray[CChar, Nat._1]
 object _dummy_array430: 
   given _tag: Tag[_dummy_array430] = Tag.CArray[CChar, Nat._1](Tag.Byte, Tag.Nat1)
@@ -25,9 +19,6 @@ object _dummy_array430:
   extension (v: _dummy_array430)
     inline def value: CArray[CChar, Nat._1] = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type _dummy_array431 = CArray[CChar, Nat._1]
 object _dummy_array431: 
   given _tag: Tag[_dummy_array431] = Tag.CArray[CChar, Nat._1](Tag.Byte, Tag.Nat1)
@@ -35,9 +26,6 @@ object _dummy_array431:
   extension (v: _dummy_array431)
     inline def value: CArray[CChar, Nat._1] = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type _dummy_array432 = CArray[CChar, Nat._1]
 object _dummy_array432: 
   given _tag: Tag[_dummy_array432] = Tag.CArray[CChar, Nat._1](Tag.Byte, Tag.Nat1)
@@ -45,9 +33,6 @@ object _dummy_array432:
   extension (v: _dummy_array432)
     inline def value: CArray[CChar, Nat._1] = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type _dummy_array433 = CArray[CChar, Nat._1]
 object _dummy_array433: 
   given _tag: Tag[_dummy_array433] = Tag.CArray[CChar, Nat._1](Tag.Byte, Tag.Nat1)
@@ -55,9 +40,6 @@ object _dummy_array433:
   extension (v: _dummy_array433)
     inline def value: CArray[CChar, Nat._1] = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type _dummy_array434 = CArray[CChar, Nat._1]
 object _dummy_array434: 
   given _tag: Tag[_dummy_array434] = Tag.CArray[CChar, Nat._1](Tag.Byte, Tag.Nat1)
@@ -65,9 +47,6 @@ object _dummy_array434:
   extension (v: _dummy_array434)
     inline def value: CArray[CChar, Nat._1] = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type _dummy_array435 = CArray[CChar, Nat._1]
 object _dummy_array435: 
   given _tag: Tag[_dummy_array435] = Tag.CArray[CChar, Nat._1](Tag.Byte, Tag.Nat1)
@@ -75,9 +54,6 @@ object _dummy_array435:
   extension (v: _dummy_array435)
     inline def value: CArray[CChar, Nat._1] = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type _dummy_array436 = CArray[CChar, Nat._1]
 object _dummy_array436: 
   given _tag: Tag[_dummy_array436] = Tag.CArray[CChar, Nat._1](Tag.Byte, Tag.Nat1)
@@ -85,9 +61,6 @@ object _dummy_array436:
   extension (v: _dummy_array436)
     inline def value: CArray[CChar, Nat._1] = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type _dummy_array437 = CArray[CChar, Nat._1]
 object _dummy_array437: 
   given _tag: Tag[_dummy_array437] = Tag.CArray[CChar, Nat._1](Tag.Byte, Tag.Nat1)
@@ -95,9 +68,6 @@ object _dummy_array437:
   extension (v: _dummy_array437)
     inline def value: CArray[CChar, Nat._1] = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type _dummy_array441 = CArray[CChar, Nat._1]
 object _dummy_array441: 
   given _tag: Tag[_dummy_array441] = Tag.CArray[CChar, Nat._1](Tag.Byte, Tag.Nat1)
@@ -105,9 +75,6 @@ object _dummy_array441:
   extension (v: _dummy_array441)
     inline def value: CArray[CChar, Nat._1] = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type _dummy_array5897 = CArray[CChar, Nat._1]
 object _dummy_array5897: 
   given _tag: Tag[_dummy_array5897] = Tag.CArray[CChar, Nat._1](Tag.Byte, Tag.Nat1)
@@ -115,9 +82,6 @@ object _dummy_array5897:
   extension (v: _dummy_array5897)
     inline def value: CArray[CChar, Nat._1] = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type _dummy_array5898 = CArray[CChar, Nat._1]
 object _dummy_array5898: 
   given _tag: Tag[_dummy_array5898] = Tag.CArray[CChar, Nat._1](Tag.Byte, Tag.Nat1)
@@ -125,9 +89,6 @@ object _dummy_array5898:
   extension (v: _dummy_array5898)
     inline def value: CArray[CChar, Nat._1] = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type _dummy_array5899 = CArray[CChar, Nat._1]
 object _dummy_array5899: 
   given _tag: Tag[_dummy_array5899] = Tag.CArray[CChar, Nat._1](Tag.Byte, Tag.Nat1)
@@ -135,9 +96,6 @@ object _dummy_array5899:
   extension (v: _dummy_array5899)
     inline def value: CArray[CChar, Nat._1] = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type _dummy_array5900 = CArray[CChar, Nat._1]
 object _dummy_array5900: 
   given _tag: Tag[_dummy_array5900] = Tag.CArray[CChar, Nat._1](Tag.Byte, Tag.Nat1)
@@ -145,9 +103,6 @@ object _dummy_array5900:
   extension (v: _dummy_array5900)
     inline def value: CArray[CChar, Nat._1] = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type _dummy_array5901 = CArray[CChar, Nat._1]
 object _dummy_array5901: 
   given _tag: Tag[_dummy_array5901] = Tag.CArray[CChar, Nat._1](Tag.Byte, Tag.Nat1)
@@ -155,9 +110,6 @@ object _dummy_array5901:
   extension (v: _dummy_array5901)
     inline def value: CArray[CChar, Nat._1] = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type _dummy_array5902 = CArray[CChar, Nat._1]
 object _dummy_array5902: 
   given _tag: Tag[_dummy_array5902] = Tag.CArray[CChar, Nat._1](Tag.Byte, Tag.Nat1)
@@ -165,9 +117,6 @@ object _dummy_array5902:
   extension (v: _dummy_array5902)
     inline def value: CArray[CChar, Nat._1] = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type _dummy_array5903 = CArray[CChar, Nat._1]
 object _dummy_array5903: 
   given _tag: Tag[_dummy_array5903] = Tag.CArray[CChar, Nat._1](Tag.Byte, Tag.Nat1)
@@ -175,9 +124,6 @@ object _dummy_array5903:
   extension (v: _dummy_array5903)
     inline def value: CArray[CChar, Nat._1] = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type _dummy_array5904 = CArray[CChar, Nat._1]
 object _dummy_array5904: 
   given _tag: Tag[_dummy_array5904] = Tag.CArray[CChar, Nat._1](Tag.Byte, Tag.Nat1)
@@ -185,9 +131,6 @@ object _dummy_array5904:
   extension (v: _dummy_array5904)
     inline def value: CArray[CChar, Nat._1] = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type _dummy_array5905 = CArray[CChar, Nat._1]
 object _dummy_array5905: 
   given _tag: Tag[_dummy_array5905] = Tag.CArray[CChar, Nat._1](Tag.Byte, Tag.Nat1)
@@ -195,9 +138,6 @@ object _dummy_array5905:
   extension (v: _dummy_array5905)
     inline def value: CArray[CChar, Nat._1] = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type _dummy_array5909 = CArray[CChar, Nat._1]
 object _dummy_array5909: 
   given _tag: Tag[_dummy_array5909] = Tag.CArray[CChar, Nat._1](Tag.Byte, Tag.Nat1)
@@ -226,9 +166,6 @@ object int8_t:
   extension (v: int8_t)
     inline def value: scala.scalanative.unsafe.CChar = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_bool = CInt
 object nk_bool: 
   given _tag: Tag[nk_bool] = Tag.Int
@@ -236,9 +173,6 @@ object nk_bool:
   extension (v: nk_bool)
     inline def value: CInt = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 type nk_byte = uint8_t
 object nk_byte: 
   given _tag: Tag[nk_byte] = uint8_t._tag
@@ -246,9 +180,6 @@ object nk_byte:
   extension (v: nk_byte)
     inline def value: uint8_t = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 type nk_char = int8_t
 object nk_char: 
   given _tag: Tag[nk_char] = int8_t._tag
@@ -256,9 +187,6 @@ object nk_char:
   extension (v: nk_char)
     inline def value: int8_t = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_command_custom_callback = CFuncPtr6[Ptr[Byte], CShort, CShort, CUnsignedShort, CUnsignedShort, nk_handle, Unit]
 object nk_command_custom_callback: 
   given _tag: Tag[nk_command_custom_callback] = Tag.materializeCFuncPtr6[Ptr[Byte], CShort, CShort, CUnsignedShort, CUnsignedShort, nk_handle, Unit]
@@ -268,9 +196,6 @@ object nk_command_custom_callback:
     inline def value: CFuncPtr6[Ptr[Byte], CShort, CShort, CUnsignedShort, CUnsignedShort, nk_handle, Unit] = v
     inline def toPtr: CVoidPtr = CFuncPtr.toPtr(v)
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 type nk_flags = nk_uint
 object nk_flags: 
   given _tag: Tag[nk_flags] = nk_uint._tag
@@ -278,9 +203,6 @@ object nk_flags:
   extension (v: nk_flags)
     inline def value: nk_uint = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_glyph = CArray[CChar, Nat._4]
 object nk_glyph: 
   given _tag: Tag[nk_glyph] = Tag.CArray[CChar, Nat._4](Tag.Byte, Tag.Nat4)
@@ -288,9 +210,6 @@ object nk_glyph:
   extension (v: nk_glyph)
     inline def value: CArray[CChar, Nat._4] = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 type nk_hash = nk_uint
 object nk_hash: 
   given _tag: Tag[nk_hash] = nk_uint._tag
@@ -298,9 +217,6 @@ object nk_hash:
   extension (v: nk_hash)
     inline def value: nk_uint = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 type nk_int = int32_t
 object nk_int: 
   given _tag: Tag[nk_int] = int32_t._tag
@@ -308,9 +224,6 @@ object nk_int:
   extension (v: nk_int)
     inline def value: int32_t = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_plugin_alloc = CFuncPtr3[nk_handle, Ptr[Byte], nk_size, Ptr[Byte]]
 object nk_plugin_alloc: 
   given _tag: Tag[nk_plugin_alloc] = Tag.materializeCFuncPtr3[nk_handle, Ptr[Byte], nk_size, Ptr[Byte]]
@@ -320,9 +233,6 @@ object nk_plugin_alloc:
     inline def value: CFuncPtr3[nk_handle, Ptr[Byte], nk_size, Ptr[Byte]] = v
     inline def toPtr: CVoidPtr = CFuncPtr.toPtr(v)
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_plugin_copy = CFuncPtr3[nk_handle, CString, CInt, Unit]
 object nk_plugin_copy: 
   given _tag: Tag[nk_plugin_copy] = Tag.materializeCFuncPtr3[nk_handle, CString, CInt, Unit]
@@ -332,9 +242,6 @@ object nk_plugin_copy:
     inline def value: CFuncPtr3[nk_handle, CString, CInt, Unit] = v
     inline def toPtr: CVoidPtr = CFuncPtr.toPtr(v)
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_plugin_filter = CFuncPtr2[Ptr[nk_text_edit], nk_rune, nk_bool]
 object nk_plugin_filter: 
   given _tag: Tag[nk_plugin_filter] = Tag.materializeCFuncPtr2[Ptr[nk_text_edit], nk_rune, nk_bool]
@@ -344,9 +251,6 @@ object nk_plugin_filter:
     inline def value: CFuncPtr2[Ptr[nk_text_edit], nk_rune, nk_bool] = v
     inline def toPtr: CVoidPtr = CFuncPtr.toPtr(v)
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_plugin_free = CFuncPtr2[nk_handle, Ptr[Byte], Unit]
 object nk_plugin_free: 
   given _tag: Tag[nk_plugin_free] = Tag.materializeCFuncPtr2[nk_handle, Ptr[Byte], Unit]
@@ -356,9 +260,6 @@ object nk_plugin_free:
     inline def value: CFuncPtr2[nk_handle, Ptr[Byte], Unit] = v
     inline def toPtr: CVoidPtr = CFuncPtr.toPtr(v)
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_plugin_paste = CFuncPtr2[nk_handle, Ptr[nk_text_edit], Unit]
 object nk_plugin_paste: 
   given _tag: Tag[nk_plugin_paste] = Tag.materializeCFuncPtr2[nk_handle, Ptr[nk_text_edit], Unit]
@@ -368,9 +269,6 @@ object nk_plugin_paste:
     inline def value: CFuncPtr2[nk_handle, Ptr[nk_text_edit], Unit] = v
     inline def toPtr: CVoidPtr = CFuncPtr.toPtr(v)
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 type nk_ptr = uintptr_t
 object nk_ptr: 
   given _tag: Tag[nk_ptr] = uintptr_t._tag
@@ -378,9 +276,6 @@ object nk_ptr:
   extension (v: nk_ptr)
     inline def value: uintptr_t = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_query_font_glyph_f = CFuncPtr5[nk_handle, Float, Ptr[nk_user_font_glyph], nk_rune, nk_rune, Unit]
 object nk_query_font_glyph_f: 
   given _tag: Tag[nk_query_font_glyph_f] = Tag.materializeCFuncPtr5[nk_handle, Float, Ptr[nk_user_font_glyph], nk_rune, nk_rune, Unit]
@@ -390,9 +285,6 @@ object nk_query_font_glyph_f:
     inline def value: CFuncPtr5[nk_handle, Float, Ptr[nk_user_font_glyph], nk_rune, nk_rune, Unit] = v
     inline def toPtr: CVoidPtr = CFuncPtr.toPtr(v)
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 type nk_rune = nk_uint
 object nk_rune: 
   given _tag: Tag[nk_rune] = nk_uint._tag
@@ -400,9 +292,6 @@ object nk_rune:
   extension (v: nk_rune)
     inline def value: nk_uint = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 type nk_short = int16_t
 object nk_short: 
   given _tag: Tag[nk_short] = int16_t._tag
@@ -410,9 +299,6 @@ object nk_short:
   extension (v: nk_short)
     inline def value: int16_t = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 type nk_size = uintptr_t
 object nk_size: 
   given _tag: Tag[nk_size] = uintptr_t._tag
@@ -420,9 +306,6 @@ object nk_size:
   extension (v: nk_size)
     inline def value: uintptr_t = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type nk_text_width_f = CFuncPtr4[nk_handle, Float, CString, CInt, Float]
 object nk_text_width_f: 
   given _tag: Tag[nk_text_width_f] = Tag.materializeCFuncPtr4[nk_handle, Float, CString, CInt, Float]
@@ -432,9 +315,6 @@ object nk_text_width_f:
     inline def value: CFuncPtr4[nk_handle, Float, CString, CInt, Float] = v
     inline def toPtr: CVoidPtr = CFuncPtr.toPtr(v)
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 type nk_uchar = uint8_t
 object nk_uchar: 
   given _tag: Tag[nk_uchar] = uint8_t._tag
@@ -442,9 +322,6 @@ object nk_uchar:
   extension (v: nk_uchar)
     inline def value: uint8_t = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 type nk_uint = uint32_t
 object nk_uint: 
   given _tag: Tag[nk_uint] = uint32_t._tag
@@ -452,9 +329,6 @@ object nk_uint:
   extension (v: nk_uint)
     inline def value: uint32_t = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 type nk_ushort = uint16_t
 object nk_ushort: 
   given _tag: Tag[nk_ushort] = uint16_t._tag
@@ -462,9 +336,6 @@ object nk_ushort:
   extension (v: nk_ushort)
     inline def value: uint16_t = v
 
-/**
- * [bindgen] header: /Users/velvetbaldmime/projects/nuklear-bindings/src/main/resources/scala-native/nuklear.h
-*/
 opaque type stbrp_coord = CInt
 object stbrp_coord: 
   given _tag: Tag[stbrp_coord] = Tag.Int
@@ -493,9 +364,6 @@ object uint8_t:
   extension (v: uint8_t)
     inline def value: scala.scalanative.unsigned.UByte = v
 
-/**
- * [bindgen] header: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_uintptr_t.h
-*/
 opaque type uintptr_t = CUnsignedLongInt
 object uintptr_t: 
   given _tag: Tag[uintptr_t] = Tag.USize
